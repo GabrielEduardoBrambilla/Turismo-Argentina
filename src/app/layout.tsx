@@ -4,6 +4,7 @@ import './globals.css'
 import {
   FaFacebook,
   FaInstagram,
+  FaPhone,
   FaPhoneAlt,
   FaSearch,
   FaShoppingBag
@@ -12,6 +13,7 @@ import { FaWhatsapp } from 'react-icons/fa6'
 import logo from '../assets/Conquista-tu-Mundo-Logo-NUEVO-1.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -40,8 +42,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* CONTACT HEADER */}
-        <header className="flex px-12 py-3">
-          <div className="social-contact flex w-full gap-8 text-xl bg-black">
+        <header className="flex px-12 py-3 bg-black text-white">
+          <div className="social-contact flex w-full gap-8 text-xl  ">
             <div className="phone flex items-center gap-2 cursor-pointer">
               <FaPhoneAlt fontSize={22} />
               <span>Hablar con un ejecutivo </span>
@@ -69,6 +71,34 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
+        <footer className="flex px-12 gap-4 py-8 flex-col bg-slate-900">
+          <div className="logo flex-1 flex-wrap">
+            <Image alt="" src={logo} />
+          </div>
+          <div className="content flex justify-between ">
+            <div className="col-2  text-white flex flex-col gap-4">
+              <p className=" text-emerald-500 font-bold text-lg">
+                Hablar con un ejecutivo
+              </p>
+              <Button className="flex gap-4 bg-green-500" variant={'default'}>
+                <FaWhatsapp fontSize={28} />
+                Enviar un mensaje
+              </Button>
+            </div>
+            <div className="col-2  text-white flex flex-col gap-4">
+              <p className="text-emerald-500 font-bold text-lg">Políticas</p>
+              <Link href={''}>Terminos y Condiciones</Link>
+              <Link href={''}>Devolucion, anulacion y cambio</Link>
+              <Link href={''}>Bases del Concurso Vive Iguazú</Link>
+            </div>
+            <div className="col-3 text-white flex flex-col gap-4">
+              <p className="text-emerald-500 font-bold text-lg">Información</p>
+              <Link href={''}>Puerto Iguazu, Argentina</Link>
+              <Link href={''}>turismo@argentin.com.ar</Link>
+              <Link href={''}>+54 685 245-7633</Link>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   )
