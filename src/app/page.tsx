@@ -13,6 +13,7 @@ import img3 from '../assets/imgs/97913c2a-c3c9-462f-b859-b52cf4e42ffb.jpeg'
 import Image from 'next/image'
 import Autoplay from 'embla-carousel-autoplay'
 import Marquee from 'react-fast-marquee'
+import Link from 'next/link'
 
 export default function page() {
   return (
@@ -52,29 +53,226 @@ export default function page() {
           dignissimos quas explicabo consequatur. Voluptatum?
         </Marquee>
       </div>
-      <section className="Planos de viagem">
+      <section className="Planos de viagem mx-8">
         <h2 className="text-4xl my-8 font-bold">Conoce nuestros tours</h2>
 
-        <div className="grid grid-cols-3">
-          <div className="card relative w-full h-96 rounded-s-md text-white ">
-            <Image
-              src={img3}
-              alt=""
-              className="w-full h-full object-cover rounded-md -z-10 absolute"
-            />
-            <div className="absolute m-6  ">
-              <div className="tag-nacionalidade h-4 w-fit p-6 text-lg text-black bg-white flex flex-wrap content-center rounded-full">
+        <div className="grid grid-cols-3 gap-12">
+          <Link href={''} about="">
+            <div className=" card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img2}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
                 Nacional
-              </div>
-              <div className="text absolute top-0 ">
-                <h2 className="trip-tittle">Carreta Austral Norte</h2>
-                <div className="periodo">7 dias y 6 noches</div>
-                <div className="price">
-                  desde <strong>$750.000 USD</strong>
-                </div>
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
               </div>
             </div>
-          </div>
+          </Link>
+          <Link href={''} about="">
+            <div className="card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img3}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Nacional
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
+              </div>
+            </div>
+          </Link>
+          <Link href={''} about="">
+            <div className="card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img1}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Nacional
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
+              </div>
+            </div>
+          </Link>
+          <Link href={''} about="">
+            <div className="card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img1}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Nacional
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
+              </div>
+            </div>
+          </Link>{' '}
+          <Link href={''} about="">
+            <div className="card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img1}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Nacional
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
+              </div>
+            </div>
+          </Link>{' '}
+          <Link href={''} about="">
+            <div className="card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img1}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Nacional
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
+              </div>
+            </div>
+          </Link>{' '}
+          <Link href={''} about="">
+            <div className="card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img1}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Nacional
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
+              </div>
+            </div>
+          </Link>{' '}
+          <Link href={''} about="">
+            <div className="card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img1}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Nacional
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
+              </div>
+            </div>
+          </Link>{' '}
+          <Link href={''} about="">
+            <div className="card relative flex content-center overflow-hidden h-[32rem] text-white justify-items-end items-end rounded-3xl ">
+              <Image
+                alt=""
+                src={img1}
+                className=" absolute -z-10 object-cover top-0 h-full "
+              />
+              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Nacional
+              </p>
+
+              <div className="content p-4 h-1/2 w-full  bg-gradient-to-t from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
+                <p className="font-bold w-fit text-3xl mt-6">
+                  Carretara Austral
+                </p>
+                <p className=" p-2 px-6 bg-gray-950 text-lg flex w-fit content-center flex-wrap">
+                  7 dias y 6 noches
+                </p>
+                <p className="text-lg">
+                  desde <strong>$755.000 CLP</strong>
+                </p>
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
     </>

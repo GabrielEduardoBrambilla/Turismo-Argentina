@@ -38,9 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={` font-sans antialiased`}>
         {/* CONTACT HEADER */}
         <header className="flex px-12 py-3 bg-black text-white">
           <div className="social-contact flex w-full gap-8 text-xl  ">
