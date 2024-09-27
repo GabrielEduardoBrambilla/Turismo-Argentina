@@ -11,11 +11,11 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Turismo Argentina',
-  description: 'Created by Gabriel Eduardo Brambilla',
+  description: 'Created by Gabriel Eduardo Brambilla'
 }
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode
 }>) {
@@ -60,28 +60,34 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
-        <footer className="flex px-12 gap-4 py-8 flex-col bg-slate-900">
-          <div className="logo flex-1 flex-wrap">
-            <Image alt="" src={logo} />
-          </div>
+        <footer className="flex px-12 gap-4 py-8 flex-col bg-slate-900 font-inter">
           <div className="content flex justify-between ">
+            <div className="logo flex-wrap">
+              <Image alt="" src={logo} />
+            </div>
             <div className="col-2  text-white flex flex-col gap-4">
-              <p className=" text-emerald-500 font-bold text-lg">
+              <h2 className=" text-cyan-400 font-semibold font-robotoMono text-lg mb-2">
                 Hablar con un ejecutivo
-              </p>
+              </h2>
               <Button className="flex gap-4 bg-green-500" variant={'default'}>
                 <FaWhatsapp fontSize={28} />
                 Enviar un mensaje
               </Button>
             </div>
             <div className="col-2  text-white flex flex-col gap-4">
-              <p className="text-emerald-500 font-bold text-lg">Políticas</p>
+              {/* <p className="text-emerald-500 font-bold text-lg">Políticas</p> */}
+              <h2 className=" text-cyan-400 font-semibold font-robotoMono text-lg mb-2">
+              Políticas
+              </h2>
               <Link href={''}>Terminos y Condiciones</Link>
               <Link href={''}>Devolucion, anulacion y cambio</Link>
               <Link href={''}>Bases del Concurso Vive Iguazú</Link>
             </div>
             <div className="col-3 text-white flex flex-col gap-4">
-              <p className="text-emerald-500 font-bold text-lg">Información</p>
+              {/* <p className="text-emerald-500 font-bold text-lg">Información</p> */}
+              <h2 className=" text-cyan-400 font-semibold font-robotoMono text-lg mb-2">
+              Información
+              </h2>
               <Link href={''}>Puerto Iguazu, Argentina</Link>
               <Link href={''}>turismo@argentin.com.ar</Link>
               <Link href={''}>+54 685 245-7633</Link>
