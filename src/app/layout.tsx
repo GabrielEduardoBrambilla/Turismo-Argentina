@@ -1,71 +1,62 @@
+import { Button } from '@/components/ui/button'
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
-import './globals.css'
-import {
-  FaFacebook,
-  FaInstagram,
-  FaPhone,
-  FaPhoneAlt,
-  FaSearch,
-  FaShoppingBag
-} from 'react-icons/fa'
-import { FaWhatsapp } from 'react-icons/fa6'
-import logo from '../assets/Conquista-tu-Mundo-Logo-NUEVO-1.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900'
-})
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900'
-})
+import { CiSearch } from 'react-icons/ci'
+import { FaFacebook, FaInstagram, FaPhoneAlt } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa6'
+import { HiOutlineShoppingBag } from 'react-icons/hi2'
+import logo from '../assets/Conquista-tu-Mundo-Logo-NUEVO-1.png'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Turismo Argentina',
-  description: 'Created by Gabriel Eduardo Brambilla'
+  description: 'Created by Gabriel Eduardo Brambilla',
 }
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <body className={` font-sans antialiased`}>
+      <body className={` font-inter antialiased`}>
         {/* CONTACT HEADER */}
-        <header className="flex px-12 py-3 bg-black text-white">
-          <div className="social-contact flex w-full gap-8 text-xl  ">
-            <div className="phone flex items-center gap-2 cursor-pointer">
-              <FaPhoneAlt fontSize={22} />
+        <header className="flex px-12 py-4 bg-black text-white">
+          <div className="social-contact flex w-full gap-8 font-robotoMono  text-base">
+            <div className="phone flex items-center gap-4 items-center  justify-center cursor-pointer ">
+              <FaPhoneAlt fontSize={20} />
               <span>Hablar con un ejecutivo </span>
             </div>
-            <div className="whatsapp flex items-center gap-2 cursor-pointer">
+            <div className="whatsapp flex items-center gap-4 items-center justify-center  cursor-pointer">
               <FaWhatsapp fontSize={28} />
               <span>Envíanos un mesaje</span>
             </div>
           </div>
-          <div className="social-media flex items-center gap-4">
-            <FaFacebook fontSize={26} />
-            <FaInstagram fontSize={26} />
+          <div className="social-media flex items-center gap-6">
+            <FaFacebook fontSize={28} />
+            <FaInstagram fontSize={28} />
           </div>
         </header>
         <nav className="bg-white text-black flex px-12 py-3 justify-between items-center">
-          <Image src={logo} alt="" className="w-28" />
-          <div className="flex gap-4 atractions-type text-lg font-semibold">
-            <Link href={''}>Nacional</Link>
-            <Link href={''}>Internacional</Link>
-            <Link href={''}>Quiénes Somos</Link>
+          <Link href={'/'}>
+            <Image src={logo} alt="" className="w-40 h-20 object-contain" />
+          </Link>
+          <div className="flex gap-12 text-gray-500 text-xl font-light ">
+            <Link className="hover:underline" href={''}>
+              Nacional
+            </Link>
+            <Link className="hover:underline" href={''}>
+              Internacional
+            </Link>
+            <Link className="hover:underline" href={''}>
+              Quiénes Somos
+            </Link>
           </div>
           <div className="action-buttons flex gap-4">
-            <FaSearch />
-            <FaShoppingBag />
+            <CiSearch className="text-4xl" />
+            <HiOutlineShoppingBag className="text-4xl" />
           </div>
         </nav>
         {children}

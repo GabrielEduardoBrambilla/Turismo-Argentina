@@ -30,31 +30,31 @@ export default function page() {
             loop: true,
           }}
         >
-          <CarouselContent className="flex h-lvh">
-            <CarouselItem className="flex justify-items-center">
-              <Image alt="" src={img1} className="object-cover" />
+          <CarouselContent className="flex h-[560px] object-cover">
+            <CarouselItem className="flex justify-items-center ">
+              <Image alt="" src={img2} className="object-cover rounded-b-[90px] w-full" />
             </CarouselItem>
-            <CarouselItem>
-              <Image alt="" src={img2} />
+            <CarouselItem className="flex justify-items-center ">
+              <Image alt="" src={img1} className="object-cover rounded-b-[90px] w-full" />
             </CarouselItem>
-            <CarouselItem>
-              <Image alt="" src={img3} />
+            <CarouselItem className="flex justify-items-center ">
+              <Image alt="" src={img3} className="object-cover rounded-b-[90px] w-full" />
             </CarouselItem>
           </CarouselContent>
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 gap-4 flex">
+          <div className="absolute bottom-4 left-full -translate-x-full -mx-16 my-6 z-10 gap-4 flex">
             <CarouselPrevious className=" z-10 bottom-0 right-12 " />
             <CarouselNext className="  right-0 -bottom-10  " />
           </div>
         </Carousel>
-        <Marquee className="text-white text-lg h-16 " pauseOnHover speed={60}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias saepe
-          dolorem repellat maxime nostrum **** reprehenderit accusantium eum
-          labore illum aperiam iure, minus rerum laboriosam excepturi
-          dignissimos quas explicabo consequatur. Voluptatum?
+        <Marquee className="font-robotoMono text-white text-lg h-16 flex gap-4" pauseOnHover speed={60}>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias saepe Gabriel</p>
+          <span className='mx-4'>Eduardo dolorem repellat maxime nostrum reprehenderit accusantium eum Gabriel</span>
+          <p>Eduardo labore illum aperiam iure, minus rerum laboriosam excepturi
+          dignissimos quas explicabo consequatur. Voluptatum? Gabriel</p>
         </Marquee>
       </div>
       <section className="Planos de viagem mx-8">
-        <h2 className="text-4xl my-8 font-bold">Conoce nuestros tours</h2>
+        <h2 className="text-5xl my-8 font-bold">Conoce nuestros tours</h2>
 
         <div className="grid grid-cols-3 gap-12">
           <Link href={'./viajens/first'} about="">
@@ -64,8 +64,8 @@ export default function page() {
                 src={img2}
                 className=" absolute -z-10 object-cover top-0 h-full "
               />
-              <p className="absolute top-0 px-8 py-4 m-4 bg-white text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
-                Nacional
+              <p className="absolute top-0 px-8 py-4 m-4 bg-yellow-200 text-gray-800 text-lg font-semibold rounded-full flex content-center flex-wrap">
+                Internacional
               </p>
 
               <div className="content p-4 h-1/2 bg-gradient-to-t w-full   from-black to-transparent flex flex-col justify-center flex-wrap gap-6 rounded-b-lg ">
