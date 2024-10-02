@@ -45,7 +45,7 @@ export default function TripPage() {
           </label>
         </div>
       </section>
-      <div className="mb-8 grid grid-cols-2">
+      <div className="m-auto mb-8 grid w-4/5 grid-cols-2">
         <div className="image-row grid grid-cols-2 gap-6">
           <div className="img-wrapper col-span-2">
             <Image alt="" className="mb-2 rounded-3xl" src={imgMain} />
@@ -72,7 +72,7 @@ export default function TripPage() {
             src={outsideHotelCleaner}
           />
         </div>
-        <div className="content-row"></div>
+        <div className="content-row bg-red-600"></div>
       </div>
     </>
   );

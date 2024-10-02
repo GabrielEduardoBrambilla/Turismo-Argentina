@@ -1,11 +1,10 @@
+import Navbar from "@/components/nav/navbar";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CiSearch } from "react-icons/ci";
 import { FaFacebook, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
 import logo from "../assets/Conquista-tu-Mundo-Logo-NUEVO-1.png";
 import "./globals.css";
 
@@ -23,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-inter antialiased`}>
         {/* CONTACT HEADER */}
-        <header className="flex bg-black px-12 py-4 text-white">
+        <header className="hidden bg-black px-12 py-4 text-white md:flex">
           <div className="social-contact flex w-full gap-8 font-robotoMono text-base">
             <div className="phone flex cursor-pointer items-center justify-center gap-4">
               <FaPhoneAlt fontSize={20} />
@@ -39,38 +38,21 @@ export default function RootLayout({
             <FaInstagram fontSize={28} />
           </div>
         </header>
-        <nav className="flex items-center justify-between bg-white px-12 py-3 text-black">
-          <Link href={"/"}>
-            <Image src={logo} alt="" className="h-20 w-40 object-contain" />
-          </Link>
-          <div className="flex gap-12 text-xl font-light text-gray-500">
-            <Link className="hover:underline" href={""}>
-              Nacional
-            </Link>
-            <Link className="hover:underline" href={""}>
-              Internacional
-            </Link>
-            <Link className="hover:underline" href={""}>
-              Quiénes Somos
-            </Link>
-          </div>
-          <div className="action-buttons flex gap-4">
-            <CiSearch className="text-4xl" />
-            <HiOutlineShoppingBag className="text-4xl" />
-          </div>
-        </nav>
+        <Navbar />
         {children}
-        <footer className="flex flex-col gap-4 bg-slate-900 px-12 py-8 font-inter">
-          <div className="content flex justify-between">
-            <div className="logo flex-wrap">
+        <footer className="flex flex-col items-center justify-center gap-4 bg-slate-900 px-12 py-8 font-inter md:items-stretch">
+          <div className="content grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+            <div className="logo row-span-4 flex-wrap self-center">
               <Image alt="" src={logo} />
             </div>
             <div className="col-2 flex flex-col gap-4 text-white">
-              <a href=""></a>
               <h2 className="mb-2 font-robotoMono text-lg font-semibold text-cyan-400">
                 Hablar con un ejecutivo
               </h2>
-              <Button className="flex gap-4 bg-green-500" variant={"default"}>
+              <Button
+                className="flex max-w-max gap-4 bg-green-500"
+                variant={"default"}
+              >
                 <FaWhatsapp fontSize={28} />
                 Enviar un mensaje
               </Button>
