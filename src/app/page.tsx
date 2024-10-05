@@ -29,6 +29,7 @@ export default function page() {
           opts={{
             loop: true,
           }}
+          className="z-10"
         >
           <CarouselContent className="flex h-[560px] object-cover">
             <CarouselItem className="flex justify-items-center">
