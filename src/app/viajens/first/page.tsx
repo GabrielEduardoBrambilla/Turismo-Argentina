@@ -1,9 +1,18 @@
+"use client";
 import imgMain from "@/assets/imgs/1a50c6f9-c42d-438c-8ca6-6a7ef59e4c16.jpeg";
 import insideHotel from "@/assets/imgs/4cdaa2ef-1a31-4b67-9ada-b50611efc842.jpeg";
 import insideRoom from "@/assets/imgs/4fd905de-17d3-4453-82d6-f96f717f8b91.jpeg";
 import outsideHotel from "@/assets/imgs/e0373644-198a-4ad7-882b-0b36cc9b9792.jpeg";
 import outsideHotelCleaner from "@/assets/imgs/f9cc2a5a-c99e-4571-8a77-b2c32b8344b5.jpeg";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 export default function TripPage() {
@@ -45,7 +54,47 @@ export default function TripPage() {
           </label>
         </div>
       </section>
-      <div className="m-auto mb-8 grid w-4/5 grid-cols-2">
+      <Carousel
+        orientation="horizontal"
+        plugins={[
+          Autoplay({
+            delay: 4000,
+          }),
+        ]}
+        opts={{
+          loop: true,
+        }}
+        className="z-10 md:hidden"
+      >
+        <CarouselContent className="flex h-[560px] object-cover">
+          <CarouselItem className="flex justify-items-center">
+            <Image
+              alt=""
+              src={outsideHotel}
+              className="w-full rounded-b-[90px] object-cover"
+            />
+          </CarouselItem>
+          <CarouselItem className="flex justify-items-center">
+            <Image
+              alt=""
+              src={outsideHotel}
+              className="w-full rounded-b-[90px] object-cover"
+            />
+          </CarouselItem>
+          <CarouselItem className="flex justify-items-center">
+            <Image
+              alt=""
+              src={outsideHotel}
+              className="w-full rounded-b-[90px] object-cover"
+            />
+          </CarouselItem>
+        </CarouselContent>
+        <div className="absolute bottom-4 left-full z-10 -mx-16 my-6 flex -translate-x-full gap-4">
+          <CarouselPrevious className="bottom-0 right-12 z-10" />
+          <CarouselNext className="-bottom-10 right-0" />
+        </div>
+      </Carousel>
+      <div className="mb:w-4/5 hidden md:m-auto md:mb-8 md:grid md:grid-cols-2">
         <div className="image-row grid grid-cols-2 gap-6">
           <div className="img-wrapper col-span-2">
             <Image alt="" className="mb-2 rounded-3xl" src={imgMain} />

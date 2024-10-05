@@ -35,7 +35,7 @@ export default function Navbar() {
         }`}
       >
         <Link href="#">
-          <li>Teste</li>
+          <li>Nacional</li>
         </Link>
         <Link href="#">
           <li>Teste</li>
