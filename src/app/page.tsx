@@ -80,7 +80,6 @@ export default function page() {
       </div>
       <section className="Planos de viagem mx-8">
         <h2 className="my-8 text-5xl font-bold">Conoce nuestros tours</h2>
-
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
           <Link href={"./viajens/first"} about="">
             <div className="card relative flex h-[28rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white md:h-[32rem]">
