@@ -25,8 +25,8 @@ export default function TripPage() {
           src={imgMain}
           className="flex h-[660px] w-full flex-col rounded-b-[60px] object-cover p-0 drop-shadow-xl"
         />
-        <div className="fluctuation-bar absolute -bottom-48 left-1/2 flex w-4/5 -translate-x-1/2 transform flex-col overflow-clip rounded-2xl bg-white drop-shadow-xl md:-bottom-10 md:flex-row">
-          <div className="fluctuation-bar flex w-full flex-col items-center gap-4 p-6 text-center md:flex-row">
+        <div className="fluctuation-bar absolute -bottom-48 left-1/2 flex w-4/5 -translate-x-1/2 transform flex-col overflow-clip rounded-2xl bg-white drop-shadow-xl md:-bottom-10 md:flex-row lg:max-w-6xl">
+          <div className="fluctuation-bar flex w-full flex-col items-center gap-4 p-6 text-center md:flex-row lg:justify-evenly">
             <div className="">
               <h2>Duracio</h2>
               <p>14 dias y 13 noches</p>
