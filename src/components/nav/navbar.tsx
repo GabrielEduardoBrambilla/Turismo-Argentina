@@ -30,7 +30,7 @@ export default function Navbar() {
         <Hamburger toggled={toggleSideMenu} toggle={setToggleSideMenu} />
       </div>
       <ul
-        className={`absolute left-0 top-24 z-30 flex h-screen w-screen transform flex-col items-center gap-8 bg-white p-8 pt-9 transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed left-0 top-24 z-30 flex h-full w-screen transform flex-col items-center gap-8 bg-white p-8 pt-9 transition-transform duration-300 ease-in-out md:hidden ${
           toggleSideMenu ? "translate-x-0" : "translate-x-full"
         }`}
       >
