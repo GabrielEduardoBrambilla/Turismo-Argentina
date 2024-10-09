@@ -57,6 +57,11 @@ export default function TripPage() {
             </Button>
           </label>
         </div>
+        <div className="fluctuation-title absolute bottom-52 left-1/2 z-40 -translate-x-1/2 text-center md:bottom-40">
+          <h2 className="text-5xl font-bold text-white [text-shadow:_4px_4px_4px_rgba(0,_0,_0,_.5)]">
+            Minas de Wanda
+          </h2>
+        </div>
       </section>
       <Carousel
         orientation="horizontal"
