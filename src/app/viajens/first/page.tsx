@@ -122,8 +122,17 @@ export default function TripPage() {
             src={img4}
           />
         </div>
-        <div className="content-row text-lg">
-          <h2 className="mb-4 text-3xl font-bold">Minas de Wanda</h2>
+        <div className="form-row text-lg">
+          <h4 className="text-gray-500">Nacional</h4>
+          <h2 className="mb-1 text-3xl font-bold">Minas de Wanda</h2>
+          <div className="price my-4 flex items-end gap-4">
+            <p className="text-2xl text-gray-500 line-through">$22,000</p>{" "}
+            <p className="bold font-semibold text-gray-900">$19,200</p>
+          </div>
+          <div className="oferta my-4 flex gap-4 text-base">
+            <p className="rounded-2xl bg-emerald-300 p-2 px-4">Oferta</p>
+            <p className="rounded-2xl bg-gray-300 p-2 px-4">27% OFF</p>
+          </div>
           <div className="">
             <p className="text-lg">
               A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las
@@ -160,7 +169,7 @@ export default function TripPage() {
           </div>
         </div>
       </div>
-      <section className="mx-2 max-w-xl md:hidden">
+      <section className="mx-2 max-w-xl md:m-auto">
         <div className="content-row text-lg">
           <h2 className="mb-4 text-3xl font-bold">Minas de Wanda</h2>
           <div className="">
