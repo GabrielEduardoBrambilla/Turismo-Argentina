@@ -15,23 +15,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 export default function TripPage() {
-  const [person, setPerson] = useState({ value: 2 });
-
-  const addPerson = () => {
-    setPerson((prevPerson) => ({
-      ...prevPerson, // Spread the existing state
-      value: prevPerson.value + 1, // Update the value property
-    }));
-  };
-
-  const removePerson = () => {
-    setPerson((prevPerson) => ({
-      ...prevPerson, // Spread the existing state
-      value: prevPerson.value > 0 ? prevPerson.value - 1 : 0, // Decrease the value, ensuring it doesn't go below 0
-    }));
-  };
   return (
     <>
       <section className="Carosel relative mb-60 w-full p-0 md:mb-28">
@@ -158,9 +142,9 @@ export default function TripPage() {
               famosas Minas de Wanda, en un yacimiento de piedras semipreciosas
               de cristales de cuarzo, amatistas, ágatas y topacios, que permite
               a sus visitantes apreciar este singular atractivo cielo abierto o
-              al "natural". Servicio grupal, incluye traslados, guía Bilingüe
-              (Español/Inglés) y coordinación permanente. Salidas regulares 15hs
-              aprox. por la tarde.
+              al `&quot;`natural`&quot;`. Servicio grupal, incluye traslados,
+              guía Bilingüe (Español/Inglés) y coordinación permanente. Salidas
+              regulares 15hs aprox. por la tarde.
             </p>
           </div>
           <div className="">
@@ -218,9 +202,9 @@ export default function TripPage() {
               famosas Minas de Wanda, en un yacimiento de piedras semipreciosas
               de cristales de cuarzo, amatistas, ágatas y topacios, que permite
               a sus visitantes apreciar este singular atractivo cielo abierto o
-              al "natural". Servicio grupal, incluye traslados, guía Bilingüe
-              (Español/Inglés) y coordinación permanente. Salidas regulares 15hs
-              aprox. por la tarde.
+              al `&quot;`natural`&quot;`. Servicio grupal, incluye traslados,
+              guía Bilingüe (Español/Inglés) y coordinación permanente. Salidas
+              regulares 15hs aprox. por la tarde.
             </p>
           </div>
           <div className="">
