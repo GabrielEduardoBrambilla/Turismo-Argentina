@@ -1,6 +1,11 @@
 "use client";
 
+import imgParque from "@/assets/imgs/jonatan-lewczuk-oz537xKtiYA-unsplash.jpg";
+import img1 from "@/assets/imgs/publicity/40396e6e-bdb7-45ec-bb06-b00b5236b1d2.jpeg";
+import img2 from "@/assets/imgs/publicity/56dceac7-0d28-4f81-a2dc-1fe3276591d4.jpeg";
+import img3 from "@/assets/imgs/publicity/c8797558-8c53-46bd-bd22-41a41ddda756.jpeg";
 import imgWand from "@/assets/imgs/wanda/Paseo_894165356.jpg";
+import Card from "@/components/card";
 import {
   Carousel,
   CarouselContent,
@@ -10,12 +15,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import Link from "next/link";
 import Marquee from "react-fast-marquee";
-
-import img1 from "../assets/imgs/1a50c6f9-c42d-438c-8ca6-6a7ef59e4c16.jpeg";
-import img2 from "../assets/imgs/498b328c-bacf-4595-8a10-0fca8cbd6b8a.jpeg";
-import img3 from "../assets/imgs/97913c2a-c3c9-462f-b859-b52cf4e42ffb.jpeg";
 
 export default function page() {
   return (
@@ -83,32 +83,45 @@ export default function page() {
       <section className="Planos de viagem px-4 md:w-screen lg:m-auto lg:w-4/5">
         <h2 className="my-8 text-5xl font-bold">Conoce nuestros tours</h2>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-          <Link href={"./viajens/first"} about="">
-            <div className="card relative flex h-[28rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white md:h-[32rem]">
-              <Image
-                alt=""
-                src={imgWand}
-                className="absolute top-0 -z-10 h-full object-cover"
-              />
-              <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-gray-800">
-                Nacional
-              </p>
+          <Card
+            duration="4 horas"
+            image={imgWand}
+            name="Minas Wanda"
+            price={"19,200"}
+          />
+          <Card
+            name="Cataratas Argentina"
+            duration="4 horas"
+            price="20,400"
+            image={img2}
+          />
+          <Card
+            name="Parque da Aves"
+            duration="2 horas"
+            price="15,400"
+            image={imgParque}
+            international
+          />
 
-              <div className="content flex h-3/5 w-full flex-col flex-wrap justify-center gap-6 rounded-b-lg bg-gradient-to-t from-black to-transparent p-4 md:h-1/2">
-                <p className="mt-6 w-fit text-3xl font-bold">Minas Wanda</p>
-                <p className="flex w-fit flex-wrap content-center bg-gray-950 p-2 px-6 text-lg">
-                  4 horas duracion
-                </p>
-                <p className="text-lg">
-                  Precio <strong>$19.200</strong>
-                </p>
-              </div>
-            </div>
-          </Link>
-
-          <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-yellow-200 px-8 py-4 text-lg font-semibold text-gray-800">
-            Internacional
-          </p>
+          <Card
+            duration="4 horas"
+            image={img3}
+            name="Minas Wanda"
+            price={"19,200"}
+          />
+          <Card
+            name="Parque da Aves"
+            duration="2 horas"
+            price="15,400"
+            image={imgParque}
+            international
+          />
+          <Card
+            name="Cataratas Argentina"
+            duration="4 horas"
+            price="20,400"
+            image={img2}
+          />
         </div>
       </section>
     </>

@@ -1,4 +1,5 @@
 "use client";
+import img1 from "@/assets/imgs/wanda/43.jpg";
 import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
 import img3 from "@/assets/imgs/wanda/images.jpeg";
 import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
@@ -11,11 +12,26 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import img1 from "assets/imgs/wanda/43.jpg";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 export default function TripPage() {
+  const [person, setPerson] = useState({ value: 2 });
+
+  const addPerson = () => {
+    setPerson((prevPerson) => ({
+      ...prevPerson, // Spread the existing state
+      value: prevPerson.value + 1, // Update the value property
+    }));
+  };
+
+  const removePerson = () => {
+    setPerson((prevPerson) => ({
+      ...prevPerson, // Spread the existing state
+      value: prevPerson.value > 0 ? prevPerson.value - 1 : 0, // Decrease the value, ensuring it doesn't go below 0
+    }));
+  };
   return (
     <>
       <section className="Carosel relative mb-60 w-full p-0 md:mb-28">
