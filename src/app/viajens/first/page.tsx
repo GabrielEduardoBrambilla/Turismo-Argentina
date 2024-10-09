@@ -1,9 +1,10 @@
 "use client";
-import imgMain from "@/assets/imgs/1a50c6f9-c42d-438c-8ca6-6a7ef59e4c16.jpeg";
-import insideHotel from "@/assets/imgs/4cdaa2ef-1a31-4b67-9ada-b50611efc842.jpeg";
-import insideRoom from "@/assets/imgs/4fd905de-17d3-4453-82d6-f96f717f8b91.jpeg";
 import outsideHotel from "@/assets/imgs/e0373644-198a-4ad7-882b-0b36cc9b9792.jpeg";
-import outsideHotelCleaner from "@/assets/imgs/f9cc2a5a-c99e-4571-8a77-b2c32b8344b5.jpeg";
+import img1 from "@/assets/imgs/wanda/43.jpg";
+import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
+import img3 from "@/assets/imgs/wanda/images.jpeg";
+import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
+import img5 from "@/assets/imgs/wanda/passeio-minas-de-wanda-argentina-1.webp";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -15,75 +16,45 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
-
 export default function TripPage() {
   return (
     <>
       <section className="Carosel relative mb-60 w-full p-0 md:mb-28">
         <Image
           alt=""
-          src={imgMain}
+          src={img5}
           className="flex h-[660px] w-full flex-col rounded-b-[60px] object-cover p-0 drop-shadow-xl"
         />
         <div className="fluctuation-bar absolute -bottom-48 left-1/2 flex w-4/5 -translate-x-1/2 transform flex-col overflow-clip rounded-2xl bg-white drop-shadow-xl md:-bottom-10 md:flex-row lg:max-w-6xl">
           <div className="fluctuation-bar flex w-full flex-col items-center gap-4 p-6 text-center md:flex-row lg:justify-evenly">
             <div className="">
-              <h2>Duracio</h2>
-              <p>14 dias y 13 noches</p>
+              <h2>Duracion</h2>
+              <p>4 horas</p>
             </div>
             <div className="">
               <h2>Nivel de actividad</h2>
               <p>Light - Moderada</p>
             </div>
             <div className="">
-              <h2>Tipo de actividad</h2>
-              <p>Familiar - Cultural</p>
+              <h2>Tamaño del grupo</h2>
+              <p>Mínimo 2 personas</p>
             </div>
             <div className="">
-              <h2>Tamaño del grupo</h2>
-              <p>5 pessoas</p>
+              <h2>Tipo de actividad</h2>
+              <p>Familiar - Cultural</p>
             </div>
           </div>
 
           <label htmlFor="button">
             <Button
               id="button"
-              className="h-full w-full rounded-none bg-indigo-600"
+              className="text-md h-full w-full rounded-none bg-indigo-600 p-6"
             >
               Reservar ahora
             </Button>
           </label>
         </div>
       </section>
-      {/* <div className="fluctuation-bar absolute -bottom-8 left-1/2 flex w-4/5 -translate-x-1/2 transform justify-between overflow-clip rounded-2xl bg-white drop-shadow-xl">
-          <div className="fluctuation-bar flex w-full justify-between rounded-2xl bg-white p-6">
-            <div className="">
-              <h2>Duracio</h2>
-              <p>14 dias y 13 noches</p>
-            </div>
-            <div className="">
-              <h2>Nivel de actividad</h2>
-              <p>Light - Moderada</p>
-            </div>
-            <div className="">
-              <h2>Tipo de actividad</h2>
-              <p>Familiar - Cultural</p>
-            </div>
-            <div className="">
-              <h2>Tamaño del grupo</h2>
-              <p>5 pessoas</p>
-            </div>
-          </div>
-
-          <label htmlFor="button">
-            <Button
-              id="button"
-              className="h-full w-full rounded-none bg-indigo-600"
-            >
-              Reservar ahora
-            </Button>
-          </label>
-        </div> */}
       <Carousel
         orientation="horizontal"
         plugins={[
@@ -127,42 +98,115 @@ export default function TripPage() {
       <div className="hidden gap-6 md:m-auto md:mb-8 md:w-4/5 md:grid-cols-2 lg:grid">
         <div className="image-row grid grid-cols-2 gap-6">
           <div className="img-wrapper col-span-2">
-            <Image alt="" className="mb-2 rounded-3xl" src={imgMain} />
+            <Image alt="" className="mb-2 rounded-3xl" src={img1} />
           </div>
           {/* <div className="img-wrapper-many flex gap-8"> */}
           <Image
             alt=""
             className="w-ful h-96 rounded-3xl object-cover"
-            src={insideRoom}
+            src={img2}
           />
           <Image
             alt=""
             className="h-96 w-full rounded-3xl object-cover"
-            src={insideHotel}
+            src={img3}
           />
           <Image
             alt=""
             className="h-96 w-full rounded-3xl object-cover"
-            src={outsideHotel}
+            src={img1}
           />
           <Image
             alt=""
             className="h-96 w-full rounded-3xl object-cover"
-            src={outsideHotelCleaner}
+            src={img4}
           />
         </div>
-        <div className="content-row bg-red-300">
-          <h2 className="text-3xl font-bold">Conoce nuestros tours</h2>
+        <div className="content-row text-lg">
+          <h2 className="mb-4 text-3xl font-bold">Minas de Wanda</h2>
+          <div className="">
+            <p className="text-lg">
+              A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las
+              famosas Minas de Wanda, en un yacimiento de piedras semipreciosas
+              de cristales de cuarzo, amatistas, ágatas y topacios, que permite
+              a sus visitantes apreciar este singular atractivo cielo abierto o
+              al "natural". Servicio grupal, incluye traslados, guía Bilingüe
+              (Español/Inglés) y coordinación permanente. Salidas regulares 15hs
+              aprox. por la tarde.
+            </p>
+          </div>
+          <div className="mt-8">
+            <h2 className="mb-2 text-2xl font-bold">Serviço inclusos</h2>
+            <ol className="text-md list-disc px-8">
+              <li>Traslados</li>
+              <li>Guía Bilingüe</li>
+              <li>(Español/Inglés)</li>
+              <li>Coordinación permanente</li>
+            </ol>
+          </div>
+          <div className="mt-8">
+            <p className="mb-2 text-2xl font-bold">Salidas regulares</p>
+            <ol className="text-md list-disc px-8">
+              <li>15 hrs</li>
+            </ol>
+          </div>
+          <div className="mt-8">
+            <h2 className="mb-2 text-2xl font-bold">Atencion importante</h2>
+            <p className="text-lg">
+              Las reservas se concretan una vez hecho el pago. Para reservar con
+              un <strong>48HS de anticipacion</strong> antes de las 18:00 horas
+            </p>
+            <p className="mt-2 text-lg">Antes de las 18:00 horas</p>
+          </div>
         </div>
       </div>
+      <section className="mx-2 max-w-xl md:hidden">
+        <div className="content-row text-lg">
+          <h2 className="mb-4 text-3xl font-bold">Minas de Wanda</h2>
+          <div className="">
+            <p className="text-lg">
+              A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las
+              famosas Minas de Wanda, en un yacimiento de piedras semipreciosas
+              de cristales de cuarzo, amatistas, ágatas y topacios, que permite
+              a sus visitantes apreciar este singular atractivo cielo abierto o
+              al "natural". Servicio grupal, incluye traslados, guía Bilingüe
+              (Español/Inglés) y coordinación permanente. Salidas regulares 15hs
+              aprox. por la tarde.
+            </p>
+          </div>
+          <div className="mt-8">
+            <h2 className="mb-2 text-2xl font-bold">Serviço inclusos</h2>
+            <ol className="text-md list-disc px-8">
+              <li>Traslados</li>
+              <li>Guía Bilingüe</li>
+              <li>(Español/Inglés)</li>
+              <li>Coordinación permanente</li>
+            </ol>
+          </div>
+          <div className="mt-8">
+            <p className="mb-2 text-2xl font-bold">Salidas regulares</p>
+            <ol className="text-md list-disc px-8">
+              <li>15 hrs</li>
+            </ol>
+          </div>
+          <div className="mt-8">
+            <h2 className="mb-2 text-2xl font-bold">Atencion importante</h2>
+            <p className="text-lg">
+              Las reservas se concretan una vez hecho el pago. Para reservar con
+              un <strong>48HS de anticipacion</strong> antes de las 18:00 horas
+            </p>
+            <p className="mt-2 text-lg">Antes de las 18:00 horas</p>
+          </div>
+        </div>
+      </section>
       <section className="Planos de viagem mx-2 md:mx-8">
-        <h2 className="my-8 text-5xl font-bold">Conoce nuestros tours</h2>
+        <h2 className="my-8 text-4xl font-bold">Conoce nuestros tours</h2>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
           <Link href={"./viajens/first"} about="">
             <div className="card relative flex h-[28rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white md:h-[32rem]">
               <Image
                 alt=""
-                src={outsideHotelCleaner}
+                src={img5}
                 className="absolute top-0 -z-10 h-full object-cover"
               />
               <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-yellow-200 px-8 py-4 text-lg font-semibold text-gray-800">
@@ -186,7 +230,7 @@ export default function TripPage() {
             <div className="card relative flex h-[32rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white">
               <Image
                 alt=""
-                src={outsideHotel}
+                src={img2}
                 className="absolute top-0 -z-10 h-full object-cover"
               />
               <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-gray-800">
@@ -210,7 +254,7 @@ export default function TripPage() {
             <div className="card relative flex h-[32rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white">
               <Image
                 alt=""
-                src={outsideHotelCleaner}
+                src={img3}
                 className="absolute top-0 -z-10 h-full object-cover"
               />
               <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-gray-800">
