@@ -4,6 +4,10 @@ import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
 import img3 from "@/assets/imgs/wanda/images.jpeg";
 import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
 import img5 from "@/assets/imgs/wanda/passeio-minas-de-wanda-argentina-1.webp";
+
+import img10 from "@/assets/imgs/publicity/40396e6e-bdb7-45ec-bb06-b00b5236b1d2.jpeg";
+import img20 from "@/assets/imgs/publicity/56dceac7-0d28-4f81-a2dc-1fe3276591d4.jpeg";
+import img30 from "@/assets/imgs/publicity/c8797558-8c53-46bd-bd22-41a41ddda756.jpeg";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -247,7 +251,7 @@ export default function TripPage() {
             <div className="card relative flex h-[28rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white md:h-[32rem]">
               <Image
                 alt=""
-                src={img5}
+                src={img30}
                 className="absolute top-0 -z-10 h-full object-cover"
               />
               <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-yellow-200 px-8 py-4 text-lg font-semibold text-gray-800">
@@ -271,7 +275,7 @@ export default function TripPage() {
             <div className="card relative flex h-[32rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white">
               <Image
                 alt=""
-                src={img2}
+                src={img20}
                 className="absolute top-0 -z-10 h-full object-cover"
               />
               <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-gray-800">
@@ -295,7 +299,7 @@ export default function TripPage() {
             <div className="card relative flex h-[32rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white">
               <Image
                 alt=""
-                src={img3}
+                src={img10}
                 className="absolute top-0 -z-10 h-full object-cover"
               />
               <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-gray-800">
