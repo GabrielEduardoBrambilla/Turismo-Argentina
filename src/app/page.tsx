@@ -80,22 +80,26 @@ export default function page() {
           </p>
         </Marquee>
       </div>
+      <section className="px-4 md:w-screen lg:m-auto lg:w-4/5"></section>
       <section className="Planos de viagem px-4 md:w-screen lg:m-auto lg:w-4/5">
         <h2 className="my-8 text-5xl font-bold">Conoce nuestros tours</h2>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
           <Card
+            link="./viajens/minas-wanda"
             duration="4 horas"
             image={imgWand}
             name="Minas Wanda"
             price={"19,200"}
           />
           <Card
+            link="./viajens/minas-wanda"
             name="Cataratas Argentina"
             duration="4 horas"
             price="20,400"
             image={img2}
           />
           <Card
+            link="./viajens/minas-wanda"
             name="Parque da Aves"
             duration="2 horas"
             price="15,400"
@@ -104,12 +108,14 @@ export default function page() {
           />
 
           <Card
+            link="./viajens/minas-wanda"
             duration="4 horas"
             image={img3}
             name="Minas Wanda"
             price={"19,200"}
           />
           <Card
+            link="./viajens/minas-wanda"
             name="Parque da Aves"
             duration="2 horas"
             price="15,400"
@@ -117,6 +123,7 @@ export default function page() {
             international
           />
           <Card
+            link="./viajens/minas-wanda"
             name="Cataratas Argentina"
             duration="4 horas"
             price="20,400"

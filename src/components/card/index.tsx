@@ -7,6 +7,7 @@ interface CardProps {
   name: string;
   duration: string;
   price: string;
+  link: string;
 }
 
 export default function Card({
@@ -15,9 +16,10 @@ export default function Card({
   name,
   price,
   international,
+  link,
 }: CardProps) {
   return (
-    <Link href={"./viajens/minas-wanda"} about="">
+    <Link href={link} about="">
       <div className="card relative flex h-[28rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white md:h-[32rem]">
         <Image
           alt=""
