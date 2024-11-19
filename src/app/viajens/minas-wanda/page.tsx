@@ -176,7 +176,7 @@ export default function TripPage() {
           {/* <div className="img-wrapper-many flex gap-8"> */}
           <Image
             alt=""
-            className="w-ful h-96 rounded-3xl object-cover"
+            className="h-96 w-full rounded-3xl object-cover"
             src={imagens.imgCardMain}
           />
           <Image
