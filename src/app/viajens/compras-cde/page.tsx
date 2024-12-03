@@ -1,10 +1,6 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
-import img1 from "@/assets/imgs/wanda/43.jpg";
-import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
-import img3 from "@/assets/imgs/wanda/images.jpeg";
-import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -19,69 +15,65 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
-const imagens = {
-  imgBanner: img1,
-  imgCardMain: img3,
-  imgCardSecondary: img4,
-  imgCardThird: img1,
-  imgCardFourth: img2,
-};
-
 const text = {
-  firstSmallTitle: "Nacional",
-  mainTitle: "Minas Wanda",
-  priceHigher: "$27,000",
-  priceLower: "$19,000",
+  firstSmallTitle: "",
+  mainTitle: "PASEO DE COMPRAS CDE",
+  priceHigher: "$43,053", // $33,900 + 27%
+  priceLower: "$33,900",
   discountPercent: "27% OFF",
   description:
-    "A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las famosas Minas de Wanda, en un yacimiento de piedras semipreciosas de cristales de cuarzo, amatistas, ágatas y topacios, que permite a sus visitantes apreciar este singular atractivo cielo abierto o al natural. Servicio grupal, incluye traslados,  guía Bilingüe (Español/Inglés) y coordinación permanente. Salidas regulares 15hs aprox. por la tarde.",
+    "Paseo de compras grupal por Ciudad del Este - Paraguay, incluye 2,30hrs de espera, traslado ida y vuelta desde hotel.",
   bannerBar: [
     {
-      title: "Duracion",
-      message: "4 horas",
+      title: "Duración",
+      message: "2 horas y 30 minutos de espera",
     },
     {
-      title: "Nivel de actividad",
-      message: "4 horas",
-    },
-    {
-      title: "Grupo",
-      message: "Mínimo 2 personas",
+      title: "Días disponibles",
+      message: "Martes, Jueves y Sábados",
     },
   ],
   infoSection: [
     {
-      infoTitle: "",
-      infoMessage: "",
+      infoTitle: "Punto de partida",
+      infoMessage: "Traslado ida y vuelta desde el hotel.",
     },
   ],
   bulletSection: [
     {
-      bulletTitle: "Serviço inclusos",
+      bulletTitle: "Precios",
       bulletMessages: [
         {
-          content: "Traslados",
+          content: "Precio por persona desde Hotel Arg/Br: $27,600",
         },
         {
-          content: "Guía Bilingüe",
-        },
-        {
-          content: "(Español/Inglés)",
-        },
-        {
-          content: "Coordinación permanente",
-        },
-      ],
-    },
-    {
-      bulletTitle: "Salidas regulares",
-      bulletMessages: [
-        {
-          content: "15 hrs",
+          content: "Precio por persona desde hotel Melia: $33,900",
         },
       ],
     },
   ],
+};
+// const imagens = {
+//   imgBanner: img1,
+//   imgCardMain: img3,
+//   imgCardSecondary: img4,
+//   imgCardThird: img1,
+//   imgCardFourth: img2,
+// };
+
+function getRandomImageUrl(width: number, height: number) {
+  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+}
+const imagens = {
+  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
+  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardSecondary: {
+    src: getRandomImageUrl(300, 200),
+    width: 300,
+    height: 200,
+  },
+  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
 };
 
 const atencionComponent: ReactNode = (

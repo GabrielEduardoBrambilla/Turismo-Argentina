@@ -1,10 +1,6 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
-import img1 from "@/assets/imgs/wanda/43.jpg";
-import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
-import img3 from "@/assets/imgs/wanda/images.jpeg";
-import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -19,65 +15,83 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
+// const imagens = {
+//   imgBanner: img1,
+//   imgCardMain: img3,
+//   imgCardSecondary: img4,
+//   imgCardThird: img1,
+//   imgCardFourth: img2,
+// };
+
+function getRandomImageUrl(width: number, height: number) {
+  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+}
 const imagens = {
-  imgBanner: img1,
-  imgCardMain: img3,
-  imgCardSecondary: img4,
-  imgCardThird: img1,
-  imgCardFourth: img2,
+  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
+  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardSecondary: {
+    src: getRandomImageUrl(300, 200),
+    width: 300,
+    height: 200,
+  },
+  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
 };
 
 const text = {
-  firstSmallTitle: "Nacional",
-  mainTitle: "Minas Wanda",
-  priceHigher: "$27,000",
-  priceLower: "$19,000",
+  firstSmallTitle: "",
+  mainTitle: "Amanecer en Cataratas",
+  priceHigher: "266.7",
+  priceLower: "210",
   discountPercent: "27% OFF",
   description:
-    "A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las famosas Minas de Wanda, en un yacimiento de piedras semipreciosas de cristales de cuarzo, amatistas, ágatas y topacios, que permite a sus visitantes apreciar este singular atractivo cielo abierto o al natural. Servicio grupal, incluye traslados,  guía Bilingüe (Español/Inglés) y coordinación permanente. Salidas regulares 15hs aprox. por la tarde.",
+    "El amanecer en las Cataratas comienza en el Centro de Visitantes del Parque Nacional de Iguazú, con embarque en transporte interno. El recorrido comienza en el inicio del Sendero Cataratas y finaliza en el Restaurante Porto Canoas, con desayuno servido de 7:30 a 9:30 horas. También existe la oportunidad de comenzar la aventura en el Espacio Naipi, con acceso directo al ascensor. El tramo hasta Pasarela de las Cataratas, donde se encuentra la Garganta del Diablo, una de las cataratas más sorprendentes, de 80 metros de altura, se recorre mediante ascensores panorámicos. ¡Una de las vistas más privilegiadas de las Cataratas del Iguazú en un momento mágico al amanecer!",
   bannerBar: [
     {
-      title: "Duracion",
-      message: "4 horas",
+      title: "Horario de acceso",
+      message: "De 6:30 a 7:00 horas.",
     },
     {
-      title: "Nivel de actividad",
-      message: "4 horas",
+      title: "Desayuno",
+      message: "En Restaurante Porto Canoas: de 7:30 a 9:30 horas.",
     },
     {
-      title: "Grupo",
-      message: "Mínimo 2 personas",
+      title: "Regreso",
+      message: "A partir de las 8:00 am.",
     },
   ],
   infoSection: [
     {
-      infoTitle: "",
-      infoMessage: "",
+      infoTitle: "Disponibilidad",
+      infoMessage:
+        "Los días Martes, Jueves y Sábados. Las plazas son limitadas.",
+    },
+    {
+      infoTitle: "Validez del boleto",
+      infoMessage:
+        "Hasta el final de las actividades turísticas a las 5:30 pm.",
+    },
+    {
+      infoTitle: "Condiciones",
+      infoMessage:
+        "El recorrido se realizará independientemente de las condiciones climáticas. NO INCLUYE TRASLADO DESDE HOTEL HASTA PARQUE NACIONAL IGUAZU LADO BRASILEÑO.",
     },
   ],
   bulletSection: [
     {
-      bulletTitle: "Serviço inclusos",
+      bulletTitle: "Servicios incluidos",
       bulletMessages: [
         {
-          content: "Traslados",
+          content: "Transporte interno desde el Centro de Visitantes.",
         },
         {
-          content: "Guía Bilingüe",
+          content: "Desayuno en Restaurante Porto Canoas.",
         },
         {
-          content: "(Español/Inglés)",
+          content: "Acceso al Espacio Naipi y Pasarela de las Cataratas.",
         },
         {
-          content: "Coordinación permanente",
-        },
-      ],
-    },
-    {
-      bulletTitle: "Salidas regulares",
-      bulletMessages: [
-        {
-          content: "15 hrs",
+          content: "Vista a la Garganta del Diablo con ascensores panorámicos.",
         },
       ],
     },

@@ -1,10 +1,6 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
-import img1 from "@/assets/imgs/wanda/43.jpg";
-import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
-import img3 from "@/assets/imgs/wanda/images.jpeg";
-import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -19,71 +15,75 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
+// const imagens = {
+//   imgBanner: img1,
+//   imgCardMain: img3,
+//   imgCardSecondary: img4,
+//   imgCardThird: img1,
+//   imgCardFourth: img2,
+// };
+
+function getRandomImageUrl(width: number, height: number) {
+  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+}
 const imagens = {
-  imgBanner: img1,
-  imgCardMain: img3,
-  imgCardSecondary: img4,
-  imgCardThird: img1,
-  imgCardFourth: img2,
+  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
+  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardSecondary: {
+    src: getRandomImageUrl(300, 200),
+    width: 300,
+    height: 200,
+  },
+  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
 };
 
 const text = {
-  firstSmallTitle: "Nacional",
-  mainTitle: "Minas Wanda",
-  priceHigher: "$27,000",
-  priceLower: "$19,000",
+  firstSmallTitle: "",
+  mainTitle: "PUESTA DEL SOL EN CATARATAS",
+  priceHigher: "R$228.60", // R$180 + 27%
+  priceLower: "R$180",
   discountPercent: "27% OFF",
   description:
-    "A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las famosas Minas de Wanda, en un yacimiento de piedras semipreciosas de cristales de cuarzo, amatistas, ágatas y topacios, que permite a sus visitantes apreciar este singular atractivo cielo abierto o al natural. Servicio grupal, incluye traslados,  guía Bilingüe (Español/Inglés) y coordinación permanente. Salidas regulares 15hs aprox. por la tarde.",
+    "El tour Atardecer en las Cataratas comienza en el Centro de Visitantes del parque, con recogida a las 16:00 y 16:30, llevando a los visitantes al primer mirador, frente al Hotel das Cataratas. Los visitantes pueden optar por desembarcar directamente en el Espaco Naipi, donde se encuentran los ascensores que conducen a la pasarela, con una vista privilegiada de la imponente Garganta del Diablo, sin necesidad de recorrer el sendero. También en el Espaco Naipi, encima de los ascensores, las personas serán recibidas con música en vivo y un brindis de bienvenida con opciones de vino espumoso, agua y jugo, ya incluidos en el precio de la entrada. El transporte de regreso del tour está programado para partir puntualmente a las 6:30 p. m., directamente desde Espacgo Porto Canoas.",
   bannerBar: [
     {
-      title: "Duracion",
-      message: "4 horas",
+      title: "Duración",
+      message: "16:00 a 18:30 (aproximadamente)",
     },
     {
-      title: "Nivel de actividad",
-      message: "4 horas",
-    },
-    {
-      title: "Grupo",
-      message: "Mínimo 2 personas",
+      title: "Días disponibles",
+      message: "Martes, Viernes, Sábados",
     },
   ],
   infoSection: [
     {
-      infoTitle: "",
-      infoMessage: "",
+      infoTitle: "Condiciones",
+      infoMessage:
+        "Niños hasta 6 años no pagan; el recorrido se realizará independientemente de las condiciones climáticas.",
+    },
+    {
+      infoTitle: "Entrada válida",
+      infoMessage:
+        "El boleto Sunset también es válido para ingresar durante el horario normal de apertura del parque.",
     },
   ],
   bulletSection: [
     {
-      bulletTitle: "Serviço inclusos",
+      bulletTitle: "Información adicional",
       bulletMessages: [
         {
-          content: "Traslados",
+          content:
+            "No incluye traslado desde hotel hasta Parque Nacional Iguazú (lado brasileño).",
         },
         {
-          content: "Guía Bilingüe",
-        },
-        {
-          content: "(Español/Inglés)",
-        },
-        {
-          content: "Coordinación permanente",
-        },
-      ],
-    },
-    {
-      bulletTitle: "Salidas regulares",
-      bulletMessages: [
-        {
-          content: "15 hrs",
+          content:
+            "La pulsera identificativa del tour debe recogerse en la Oficina de Turismo.",
         },
       ],
     },
   ],
 };
-
 const atencionComponent: ReactNode = (
   <div className="">
     <h2 className="mb-2 text-2xl font-bold">Atencion importante</h2>

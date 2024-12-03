@@ -1,10 +1,6 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
-import img1 from "@/assets/imgs/wanda/43.jpg";
-import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
-import img3 from "@/assets/imgs/wanda/images.jpeg";
-import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -19,54 +15,67 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
+// const imagens = {
+//   imgBanner: img1,
+//   imgCardMain: img3,
+//   imgCardSecondary: img4,
+//   imgCardThird: img1,
+//   imgCardFourth: img2,
+// };
+
+function getRandomImageUrl(width: number, height: number) {
+  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+}
 const imagens = {
-  imgBanner: img1,
-  imgCardMain: img3,
-  imgCardSecondary: img4,
-  imgCardThird: img1,
-  imgCardFourth: img2,
+  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
+  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardSecondary: {
+    src: getRandomImageUrl(300, 200),
+    width: 300,
+    height: 200,
+  },
+  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
 };
 
 const text = {
-  firstSmallTitle: "Nacional",
-  mainTitle: "Minas Wanda",
-  priceHigher: "$27,000",
-  priceLower: "$19,000",
+  firstSmallTitle: "Regular",
+  mainTitle: "Cataratas Argentinas",
+  priceHigher: "$46.863.0",
+  priceLower: "$36.900",
   discountPercent: "27% OFF",
   description:
-    "A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las famosas Minas de Wanda, en un yacimiento de piedras semipreciosas de cristales de cuarzo, amatistas, ágatas y topacios, que permite a sus visitantes apreciar este singular atractivo cielo abierto o al natural. Servicio grupal, incluye traslados,  guía Bilingüe (Español/Inglés) y coordinación permanente. Salidas regulares 15hs aprox. por la tarde.",
+    "Servicio grupal con guía Bilingüe (Español/Inglés) y coordinación permanente. Recorrido por los 3 circuitos principales del Parque Nacional Iguazú: circuito superior, inferior y garganta del Diablo. Incluye traslado ida y vuelta desde el Hotel. Salidas diarias 7:30 hs. Regreso 15 hs aproximadamente. No incluye Ingresos.",
   bannerBar: [
     {
-      title: "Duracion",
-      message: "4 horas",
+      title: "Salida",
+      message: "7:30 hs",
     },
     {
-      title: "Nivel de actividad",
-      message: "4 horas",
+      title: "Duración",
+      message: "Aprox 7,20/7,50 hs",
     },
     {
       title: "Grupo",
-      message: "Mínimo 2 personas",
+      message: "Servicio grupal",
     },
   ],
   infoSection: [
     {
-      infoTitle: "",
-      infoMessage: "",
+      infoTitle: "Reservas",
+      infoMessage:
+        "Las reservas se concretan una vez hecho el pago. Para reservar con un 48HS de antelación antes de las 18:00pm",
     },
   ],
   bulletSection: [
     {
-      bulletTitle: "Serviço inclusos",
+      bulletTitle: "Servicio inclusos",
       bulletMessages: [
         {
-          content: "Traslados",
+          content: "Traslados ida y vuelta desde el Hotel",
         },
         {
-          content: "Guía Bilingüe",
-        },
-        {
-          content: "(Español/Inglés)",
+          content: "Guía Bilingüe (Español/Inglés)",
         },
         {
           content: "Coordinación permanente",
@@ -77,7 +86,7 @@ const text = {
       bulletTitle: "Salidas regulares",
       bulletMessages: [
         {
-          content: "15 hrs",
+          content: "7:30 hs",
         },
       ],
     },

@@ -1,10 +1,6 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
-import img1 from "@/assets/imgs/wanda/43.jpg";
-import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
-import img3 from "@/assets/imgs/wanda/images.jpeg";
-import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -19,69 +15,77 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
-const imagens = {
-  imgBanner: img1,
-  imgCardMain: img3,
-  imgCardSecondary: img4,
-  imgCardThird: img1,
-  imgCardFourth: img2,
-};
-
 const text = {
-  firstSmallTitle: "Nacional",
-  mainTitle: "Minas Wanda",
-  priceHigher: "$27,000",
-  priceLower: "$19,000",
+  firstSmallTitle: "",
+  mainTitle: "NOCHE EN LAS CATARATAS",
+  priceHigher: "R$336.55", // R$265 + 27%
+  priceLower: "R$265",
   discountPercent: "27% OFF",
   description:
-    "A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las famosas Minas de Wanda, en un yacimiento de piedras semipreciosas de cristales de cuarzo, amatistas, ágatas y topacios, que permite a sus visitantes apreciar este singular atractivo cielo abierto o al natural. Servicio grupal, incluye traslados,  guía Bilingüe (Español/Inglés) y coordinación permanente. Salidas regulares 15hs aprox. por la tarde.",
+    "Noche en las Cataratas es una experiencia exclusiva en el Parque Nacional del Iguazú, que ofrece escenas sorprendentes como la luna llena y el cielo estrellado en las Cataratas. Incluye entrada después del cierre del parque y una experiencia gastronómica con queso y pasta en el Restaurante Porto Canoas. El recorrido comienza en el Centro de Visitantes del parque, con embarque único a las 19:30, llevando a los visitantes al Espacio Naipi, donde se encuentran los ascensores que conducen a la pasarela, con una vista privilegiada de la imponente Garganta del Diablo bajo la luz de las estrellas. El Restaurante Porto Canoas abre a partir de las 20 horas con servicio de quesos, pastas y guarniciones variadas, incluidas en el ticket del tour. Porto Canoas ofrece un ambiente único y acogedor, donde los visitantes pueden disfrutar de música en vivo mientras disfrutan de la vida nocturna en las Cataratas. Para regresar del recorrido, los visitantes tienen opciones de transporte a partir de las 21 horas, en el Espacio Porto Canoas, con un intervalo de media hora entre cada embarque, el último a las 22:30 horas.",
   bannerBar: [
     {
-      title: "Duracion",
-      message: "4 horas",
+      title: "Duración",
+      message: "De 19:30 a 22:30 (aproximadamente)",
     },
     {
-      title: "Nivel de actividad",
-      message: "4 horas",
-    },
-    {
-      title: "Grupo",
-      message: "Mínimo 2 personas",
+      title: "Días disponibles",
+      message: "Todos los sábados",
     },
   ],
   infoSection: [
     {
-      infoTitle: "",
-      infoMessage: "",
+      infoTitle: "Condiciones",
+      infoMessage:
+        "El recorrido se realizará independientemente de las condiciones climáticas.",
+    },
+    {
+      infoTitle: "Entrada válida",
+      infoMessage: "Incluye entrada después del cierre del parque.",
     },
   ],
   bulletSection: [
     {
-      bulletTitle: "Serviço inclusos",
+      bulletTitle: "Información adicional",
       bulletMessages: [
         {
-          content: "Traslados",
+          content:
+            "No incluye traslado desde hotel hasta Parque Nacional Iguazú (lado brasileño).",
         },
         {
-          content: "Guía Bilingüe",
+          content:
+            "Incluye experiencia gastronómica con queso y pasta en el Restaurante Porto Canoas.",
         },
         {
-          content: "(Español/Inglés)",
-        },
-        {
-          content: "Coordinación permanente",
-        },
-      ],
-    },
-    {
-      bulletTitle: "Salidas regulares",
-      bulletMessages: [
-        {
-          content: "15 hrs",
+          content:
+            "Salidas de regreso: 21h, 21h30, 22h y 22h30 desde el Espacio Porto Canoas.",
         },
       ],
     },
   ],
+};
+
+// const imagens = {
+//   imgBanner: img1,
+//   imgCardMain: img3,
+//   imgCardSecondary: img4,
+//   imgCardThird: img1,
+//   imgCardFourth: img2,
+// };
+
+function getRandomImageUrl(width: number, height: number) {
+  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+}
+const imagens = {
+  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
+  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardSecondary: {
+    src: getRandomImageUrl(300, 200),
+    width: 300,
+    height: 200,
+  },
+  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
 };
 
 const atencionComponent: ReactNode = (

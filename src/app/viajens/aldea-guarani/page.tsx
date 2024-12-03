@@ -1,10 +1,6 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
-import img1 from "@/assets/imgs/wanda/43.jpg";
-import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
-import img3 from "@/assets/imgs/wanda/images.jpeg";
-import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -19,65 +15,69 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
+// const imagens = {
+//   imgBanner: img1,
+//   imgCardMain: img3,
+//   imgCardSecondary: img4,
+//   imgCardThird: img1,
+//   imgCardFourth: img2,
+// };
+
+function getRandomImageUrl(width: number, height: number) {
+  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+}
 const imagens = {
-  imgBanner: img1,
-  imgCardMain: img3,
-  imgCardSecondary: img4,
-  imgCardThird: img1,
-  imgCardFourth: img2,
+  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
+  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardSecondary: {
+    src: getRandomImageUrl(300, 200),
+    width: 300,
+    height: 200,
+  },
+  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
 };
 
 const text = {
-  firstSmallTitle: "Nacional",
-  mainTitle: "Minas Wanda",
-  priceHigher: "$27,000",
-  priceLower: "$19,000",
+  firstSmallTitle: "",
+  mainTitle: "Aldea Guarani Fortin Mborore c/Brunch",
+  priceHigher: "56488",
+  priceLower: "44400",
   discountPercent: "27% OFF",
   description:
-    "A 40 kilómetros de Puerto Iguazú se encuentran ubicadas las famosas Minas de Wanda, en un yacimiento de piedras semipreciosas de cristales de cuarzo, amatistas, ágatas y topacios, que permite a sus visitantes apreciar este singular atractivo cielo abierto o al natural. Servicio grupal, incluye traslados,  guía Bilingüe (Español/Inglés) y coordinación permanente. Salidas regulares 15hs aprox. por la tarde.",
+    "Los mismos guaraníes reciben a los visitantes con guías expertos, lo hacen participar de sus ritos de caza, la confección de sus artesanías, cantos, creencias; los invitan a caminatas por senderos de montes y al final del recorrido se puede adquirir un souvenir de los mismos artesanos de la comunidad. Servicio grupal con guía de habla hispana y coordinación permanente. Incluye traslado ida y vuelta desde el hotel. Salidas 9:00 Hs. Duración del tour 2,30 horas aproximadamente.",
   bannerBar: [
     {
-      title: "Duracion",
-      message: "4 horas",
+      title: "Salida",
+      message: "De Lunes a Sábados.",
     },
     {
-      title: "Nivel de actividad",
-      message: "4 horas",
-    },
-    {
-      title: "Grupo",
-      message: "Mínimo 2 personas",
+      title: "Duración",
+      message: "2,30 horas aproximadamente.",
     },
   ],
   infoSection: [
     {
-      infoTitle: "",
-      infoMessage: "",
+      infoTitle: "Reservas",
+      infoMessage:
+        "Las reservas se concretan una vez hecho el pago. Para reservar con un 48HS de anticipación antes de las 18,00pm.",
     },
   ],
   bulletSection: [
     {
-      bulletTitle: "Serviço inclusos",
+      bulletTitle: "Servicios incluidos",
       bulletMessages: [
         {
-          content: "Traslados",
+          content: "Guías expertos y de habla hispana.",
         },
         {
-          content: "Guía Bilingüe",
+          content: "Participación en ritos de caza y confección de artesanías.",
         },
         {
-          content: "(Español/Inglés)",
+          content: "Caminatas por senderos de montes.",
         },
         {
-          content: "Coordinación permanente",
-        },
-      ],
-    },
-    {
-      bulletTitle: "Salidas regulares",
-      bulletMessages: [
-        {
-          content: "15 hrs",
+          content: "Traslado ida y vuelta desde el hotel.",
         },
       ],
     },
