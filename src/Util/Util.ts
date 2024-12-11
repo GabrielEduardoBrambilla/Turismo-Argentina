@@ -1,3 +1,3 @@
 export const Util = {
-  WhatsappLink: "https://wa.me/5545998294308?text=Fala%20nobre",
+  WhatsappLink: "Wa.me/+543757653424",
 };

@@ -1,10 +1,10 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
-import img1 from "@/assets/imgs/wanda/43.jpg";
-import img2 from "@/assets/imgs/wanda/Paseo_894165356.jpg";
-import img3 from "@/assets/imgs/wanda/images.jpeg";
-import img4 from "@/assets/imgs/wanda/minas-de-wanda-1.jpg";
+import img1 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.26.jpeg";
+import img2 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.35.36.jpeg";
+import img3 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.35.38 (2).jpeg";
+import img4 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.35.38.jpeg";
 import {
   Carousel,
   CarouselContent,
@@ -20,7 +20,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 
 const imagens = {
-  imgBanner: img1,
+  imgBanner: img2,
   imgCardMain: img3,
   imgCardSecondary: img4,
   imgCardThird: img1,
@@ -42,7 +42,7 @@ const text = {
     },
     {
       title: "Nivel de actividad",
-      message: "4 horas",
+      message: "Leve",
     },
     {
       title: "Grupo",

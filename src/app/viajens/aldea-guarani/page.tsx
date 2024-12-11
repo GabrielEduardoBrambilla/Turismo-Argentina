@@ -1,6 +1,11 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
+import imgBanner from "@/assets/imgs/aldea-frtin-mborore/img1.jpeg";
+import imgCardMain from "@/assets/imgs/aldea-frtin-mborore/img2.jpeg";
+import imgCardSecondary from "@/assets/imgs/aldea-frtin-mborore/img3.jpeg";
+import imgCardThird from "@/assets/imgs/aldea-frtin-mborore/img4.jpeg";
+import imgCardFourth from "@/assets/imgs/aldea-frtin-mborore/img5.jpeg";
 import {
   Carousel,
   CarouselContent,
@@ -15,34 +20,34 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
-// const imagens = {
-//   imgBanner: img1,
-//   imgCardMain: img3,
-//   imgCardSecondary: img4,
-//   imgCardThird: img1,
-//   imgCardFourth: img2,
-// };
-
-function getRandomImageUrl(width: number, height: number) {
-  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
-}
 const imagens = {
-  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
-  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-  imgCardSecondary: {
-    src: getRandomImageUrl(300, 200),
-    width: 300,
-    height: 200,
-  },
-  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgBanner: imgBanner,
+  imgCardMain: imgCardMain,
+  imgCardSecondary: imgCardSecondary,
+  imgCardThird: imgCardThird,
+  imgCardFourth: imgCardFourth,
 };
+
+// function getRandomImageUrl(width: number, height: number) {
+//   return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+// }
+// const imagens = {
+//   imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
+//   imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+//   imgCardSecondary: {
+//     src: getRandomImageUrl(300, 200),
+//     width: 300,
+//     height: 200,
+//   },
+//   imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+//   imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+// };
 
 const text = {
   firstSmallTitle: "",
   mainTitle: "Aldea Guarani Fortin Mborore c/Brunch",
-  priceHigher: "56488",
-  priceLower: "44400",
+  priceHigher: "56,488",
+  priceLower: "44,400",
   discountPercent: "27% OFF",
   description:
     "Los mismos guaraníes reciben a los visitantes con guías expertos, lo hacen participar de sus ritos de caza, la confección de sus artesanías, cantos, creencias; los invitan a caminatas por senderos de montes y al final del recorrido se puede adquirir un souvenir de los mismos artesanos de la comunidad. Servicio grupal con guía de habla hispana y coordinación permanente. Incluye traslado ida y vuelta desde el hotel. Salidas 9:00 Hs. Duración del tour 2,30 horas aproximadamente.",

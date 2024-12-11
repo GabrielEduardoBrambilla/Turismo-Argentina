@@ -1,11 +1,11 @@
 "use client";
 
-import imgParque from "@/assets/imgs/jonatan-lewczuk-oz537xKtiYA-unsplash.jpg";
-import img1 from "@/assets/imgs/publicity/40396e6e-bdb7-45ec-bb06-b00b5236b1d2.jpeg";
+import imgAldea from "@/assets/imgs/aldea-frtin-mborore/img4.jpeg";
+import { default as img1 } from "@/assets/imgs/publicity/40396e6e-bdb7-45ec-bb06-b00b5236b1d2.jpeg";
 import img2 from "@/assets/imgs/publicity/56dceac7-0d28-4f81-a2dc-1fe3276591d4.jpeg";
 import img3 from "@/assets/imgs/publicity/c8797558-8c53-46bd-bd22-41a41ddda756.jpeg";
-import imgWand from "@/assets/imgs/wanda/Paseo_894165356.jpg";
-import Card from "@/components/card";
+import imgWand from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.26.jpeg";
+import CardList from "@/components/trip-plans";
 import {
   Carousel,
   CarouselContent,
@@ -16,6 +16,30 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+const tours = [
+  {
+    link: "./viajens/minas-wanda",
+    name: "Minas Wanda",
+    duration: "4 horas",
+    price: "19,200",
+    image: imgWand,
+  },
+  {
+    link: "./viajens/cataratas-argentina",
+    name: "Cataratas Argentina",
+    duration: "4 horas",
+    price: "20,400",
+    image: img2,
+  },
+  {
+    link: "./viajens/aldea-guarani",
+    name: "Aldea Guarani",
+    duration: "2:30 horas",
+    price: "44,400",
+    image: imgAldea,
+  },
+  // Add other tour objects as needed
+];
 
 export default function page() {
   return (
@@ -81,56 +105,8 @@ export default function page() {
         </Marquee>
       </div>
       <section className="px-4 md:w-screen lg:m-auto lg:w-4/5"></section>
-      <section className="Planos de viagem px-4 md:w-screen lg:m-auto lg:w-4/5">
-        <h2 className="my-8 text-5xl font-bold">Conoce nuestros tours</h2>
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-          <Card
-            link="./viajens/minas-wanda"
-            duration="4 horas"
-            image={imgWand}
-            name="Minas Wanda"
-            price={"19,200"}
-          />
-          <Card
-            link="./viajens/minas-wanda"
-            name="Cataratas Argentina"
-            duration="4 horas"
-            price="20,400"
-            image={img2}
-          />
-          <Card
-            link="./viajens/minas-wanda"
-            name="Parque da Aves"
-            duration="2 horas"
-            price="15,400"
-            image={imgParque}
-            international
-          />
 
-          <Card
-            link="./viajens/minas-wanda"
-            duration="4 horas"
-            image={img3}
-            name="Minas Wanda"
-            price={"19,200"}
-          />
-          <Card
-            link="./viajens/minas-wanda"
-            name="Parque da Aves"
-            duration="2 horas"
-            price="15,400"
-            image={imgParque}
-            international
-          />
-          <Card
-            link="./viajens/minas-wanda"
-            name="Cataratas Argentina"
-            duration="4 horas"
-            price="20,400"
-            image={img2}
-          />
-        </div>
-      </section>
+      <CardList tours={tours} />
     </>
   );
 }
