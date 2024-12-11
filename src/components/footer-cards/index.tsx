@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import img10 from "@/assets/imgs/publicity/40396e6e-bdb7-45ec-bb06-b00b5236b1d2.jpeg";
-import img20 from "@/assets/imgs/publicity/56dceac7-0d28-4f81-a2dc-1fe3276591d4.jpeg";
-import img30 from "@/assets/imgs/publicity/c8797558-8c53-46bd-bd22-41a41ddda756.jpeg";
+import img10 from "@/assets/imgs/Zpublicity/40396e6e-bdb7-45ec-bb06-b00b5236b1d2.jpeg";
+import img20 from "@/assets/imgs/Zpublicity/56dceac7-0d28-4f81-a2dc-1fe3276591d4.jpeg";
+import img30 from "@/assets/imgs/Zpublicity/c8797558-8c53-46bd-bd22-41a41ddda756.jpeg";
 
 export function FooterCards() {
   return (

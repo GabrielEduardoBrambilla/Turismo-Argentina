@@ -1,6 +1,6 @@
 "use client";
 import { Util } from "@/Util/Util";
-import img1 from "@/assets/imgs/wanda/43.jpg";
+import img1 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.27.jpeg";
 import { FooterCards } from "@/components/footer-cards";
 
 import { Button } from "@/components/ui/button";
