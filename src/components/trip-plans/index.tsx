@@ -31,7 +31,12 @@ export default function CardList({ tours }: CardListProps) {
   return (
     <section className="Planos de viagem px-4 md:w-screen lg:m-auto lg:w-3/4">
       <h2 className="my-8 text-5xl font-bold">Conoce nuestros tours</h2>
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        className="grid grid-cols-1 gap-12 transition-all duration-500 ease-in-out md:grid-cols-2 lg:grid-cols-3"
+        style={{
+          gridTemplateRows: `repeat(${Math.ceil(visibleTours / 3)}, auto)`, // Adjust rows based on visible tours
+        }}
+      >
         {tours.slice(0, visibleTours).map((tour, index) => (
           <Card key={index} {...tour} />
         ))}
@@ -39,7 +44,7 @@ export default function CardList({ tours }: CardListProps) {
       <div className="mt-8 text-center">
         <button
           onClick={handleToggleView}
-          className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+          className="rounded border-b-2 border-gray-600 px-4 py-2 text-lg text-black drop-shadow-2xl transition-transform duration-500 ease-in-out hover:scale-110 hover:border-b-4"
         >
           {showAll ? "Ver menos" : "Ver más"}
         </button>

@@ -1,10 +1,12 @@
 "use client";
 
 import imgAldea from "@/assets/imgs/aldea-frtin-mborore/img4.jpeg";
+import img2 from "@/assets/imgs/cataratas-argentinas/WhatsApp Image 2024-11-15 at 18.31.50.jpeg";
+import img3 from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42 (2).jpeg";
+import { default as img1 } from "@/assets/imgs/jungle-fly/WhatsApp Image 2024-11-15 at 18.40.44.jpeg";
 import imgWand from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.26.jpeg";
-import { default as img1 } from "@/assets/imgs/Zpublicity/40396e6e-bdb7-45ec-bb06-b00b5236b1d2.jpeg";
-import img2 from "@/assets/imgs/Zpublicity/56dceac7-0d28-4f81-a2dc-1fe3276591d4.jpeg";
-import img3 from "@/assets/imgs/Zpublicity/c8797558-8c53-46bd-bd22-41a41ddda756.jpeg";
+import CustomerReviewNOTFAKE from "@/components/customer-review";
+import Featured from "@/components/featured";
 import HeroSectionImageWithReviews from "@/components/hero-section";
 import TripOption from "@/components/trip-options";
 import CardList from "@/components/trip-plans";
@@ -190,6 +192,8 @@ export default function page() {
       <TripOption />
 
       <CardList tours={tours} />
+      <Featured />
+      <CustomerReviewNOTFAKE />
     </>
   );
 }
