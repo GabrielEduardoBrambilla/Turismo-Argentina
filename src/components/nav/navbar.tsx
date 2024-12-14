@@ -22,7 +22,7 @@ export default function Navbar() {
         <Link className="hover:underline" href={""}>
           Internacional
         </Link>
-        <Link className="hover:underline" href={""}>
+        <Link className="hover:underline" href={"/sobre-nos"}>
           Quiénes Somos
         </Link>
       </div>
