@@ -54,7 +54,7 @@ export default function Navbar() {
         </Link>
       </ul>
 
-      <div className="action-buttons hidden gap-4 md:flex">
+      <div className="action-buttons hidden gap-4 md:hidden">
         <CiSearch className="text-4xl" />
         <HiOutlineShoppingBag className="text-4xl" />
       </div>

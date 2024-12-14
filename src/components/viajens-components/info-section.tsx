@@ -80,7 +80,7 @@ const TripInfo: React.FC<TripInfoProps> = ({
           src={imagens.imgCardFourth}
         />
       </div>
-      <div className="Info on desktop content-col sticky top-0 flex h-max min-h-screen flex-col gap-8 text-lg">
+      <div className="Info on desktop sticky top-0 flex h-max flex-col content-center gap-8 text-lg">
         <div className="">
           <h4 className="text-gray-500">{text.firstSmallTitle}</h4>
           <h2 className="mb-2 text-3xl font-bold">{text.mainTitle}</h2>
@@ -142,7 +142,7 @@ const TripInfo: React.FC<TripInfoProps> = ({
           <label htmlFor="button">
             <Button
               id="button"
-              className="text-md h-full w-full rounded-none bg-indigo-600 p-6"
+              className="text-md h-full w-full rounded-lg bg-indigo-600 p-6"
             >
               Reservar ahora
             </Button>

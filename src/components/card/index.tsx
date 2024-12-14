@@ -19,20 +19,20 @@ export default function Card({
   link,
 }: CardProps) {
   return (
-    <Link href={link} about="">
+    <Link href={link} className="group" about="">
       <div className="card relative flex h-[28rem] content-center items-end justify-items-end overflow-hidden rounded-3xl text-white md:h-[32rem]">
         <Image
           alt=""
           src={image}
-          className="absolute top-0 -z-10 h-full object-cover"
+          className="absolute top-0 -z-10 h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105 group-hover:shadow-lg"
         />
 
         {international ? (
-          <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-yellow-200 px-8 py-4 text-lg font-semibold text-gray-800">
+          <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-yellow-200 px-8 py-4 text-lg font-semibold text-gray-800 transition-transform duration-700 ease-in-out group-hover:scale-105">
             International
           </p>
         ) : (
-          <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-gray-800">
+          <p className="absolute top-0 m-4 flex flex-wrap content-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-gray-800 transition-transform duration-700 ease-in-out group-hover:scale-105">
             Nacional
           </p>
         )}

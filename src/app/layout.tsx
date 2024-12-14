@@ -34,8 +34,18 @@ export default function RootLayout({
             </div>
           </div>
           <div className="social-media flex items-center gap-6">
-            <FaFacebook fontSize={28} />
-            <FaInstagram fontSize={28} />
+            <Link
+              target="_blank"
+              href={"https://www.instagram.com/conquistatumundoevt/"}
+            >
+              <FaFacebook fontSize={28} />
+            </Link>
+            <Link
+              target="_blank"
+              href={"https://www.instagram.com/conquistatumundoevt/"}
+            >
+              <FaInstagram fontSize={28} />
+            </Link>
           </div>
         </header>
         <Navbar />
@@ -46,7 +56,7 @@ export default function RootLayout({
               <Image alt="" src={logo} />
             </div>
             <div className="col-2 flex flex-col gap-4 text-white">
-              <h2 className="mb-2 font-robotoMono text-lg font-semibold text-cyan-400">
+              <h2 className="mb-2 font-robotoMono text-lg font-semibold text-gray-100">
                 Hablar con un ejecutivo
               </h2>
               <Button
@@ -59,21 +69,33 @@ export default function RootLayout({
             </div>
             <div className="col-2 flex flex-col gap-4 text-white">
               {/* <p className="text-emerald-500 font-bold text-lg">Políticas</p> */}
-              <h2 className="mb-2 font-robotoMono text-lg font-semibold text-cyan-400">
+              <h2 className="mb-2 font-robotoMono text-lg font-semibold text-gray-100">
                 Políticas
               </h2>
-              <Link href={""}>Terminos y Condiciones</Link>
-              <Link href={""}>Devolucion, anulacion y cambio</Link>
-              <Link href={""}>Bases del Concurso Vive Iguazú</Link>
+              <Link className="text-gray-300" href={""}>
+                Terminos y Condiciones
+              </Link>
+              <Link className="text-gray-300" href={""}>
+                Devolucion, anulacion y cambio
+              </Link>
+              <Link className="text-gray-300" href={""}>
+                Bases del Concurso Vive Iguazú
+              </Link>
             </div>
             <div className="col-3 flex flex-col gap-4 text-white">
               {/* <p className="text-emerald-500 font-bold text-lg">Información</p> */}
-              <h2 className="mb-2 font-robotoMono text-lg font-semibold text-cyan-400">
+              <h2 className="mb-2 font-robotoMono text-lg font-semibold text-gray-100">
                 Información
               </h2>
-              <Link href={""}>Puerto Iguazu, Argentina</Link>
-              <Link href={""}>turismo@argentin.com.ar</Link>
-              <Link href={""}>+54 685 245-7633</Link>
+              <Link className="text-gray-300" href={""}>
+                Puerto Iguazu, Argentina
+              </Link>
+              <Link className="text-gray-300" href={""}>
+                turismo@argentin.com.ar
+              </Link>
+              <Link className="text-gray-300" href={""}>
+                +54 685 245-7633
+              </Link>
             </div>
           </div>
         </footer>

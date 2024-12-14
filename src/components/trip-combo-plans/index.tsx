@@ -29,7 +29,7 @@ export default function CardList({ tours }: CardListProps) {
   };
 
   return (
-    <section className="Planos de viagem px-4 md:w-screen lg:m-auto lg:w-3/4">
+    <section className="Planos de viagem px-4 md:w-screen lg:m-auto lg:w-4/5">
       <h2 className="my-8 text-5xl font-bold">Conoce nuestros tours</h2>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         {tours.slice(0, visibleTours).map((tour, index) => (
