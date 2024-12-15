@@ -1,6 +1,11 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
+import imgBanner from "@/assets/imgs/aldea-frtin-mborore/img1.jpeg";
+import imgCardMain from "@/assets/imgs/aldea-frtin-mborore/img2.jpeg";
+import imgCardSecondary from "@/assets/imgs/aldea-frtin-mborore/img3.jpeg";
+import imgCardThird from "@/assets/imgs/aldea-frtin-mborore/img4.jpeg";
+import imgCardFourth from "@/assets/imgs/aldea-frtin-mborore/img5.jpeg";
 import {
   Carousel,
   CarouselContent,
@@ -53,29 +58,13 @@ const text = {
     },
   ],
 };
-// const imagens = {
-//   imgBanner: img1,
-//   imgCardMain: img3,
-//   imgCardSecondary: img4,
-//   imgCardThird: img1,
-//   imgCardFourth: img2,
-// };
-
-function getRandomImageUrl(width: number, height: number) {
-  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
-}
 const imagens = {
-  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
-  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-  imgCardSecondary: {
-    src: getRandomImageUrl(300, 200),
-    width: 300,
-    height: 200,
-  },
-  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgBanner: imgBanner,
+  imgCardMain: imgCardMain,
+  imgCardSecondary: imgCardSecondary,
+  imgCardThird: imgCardThird,
+  imgCardFourth: imgCardFourth,
 };
-
 const atencionComponent: ReactNode = (
   <div className="">
     <h2 className="mb-2 text-2xl font-bold">Atencion importante</h2>

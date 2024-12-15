@@ -2,9 +2,9 @@
 import { FooterCards } from "@/components/footer-cards";
 
 import img1 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.26.jpeg";
-import img2 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.35.36.jpeg";
+import img2 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.27.jpeg";
+import img4 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.35.38 (1).jpeg";
 import img3 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.35.38 (2).jpeg";
-import img4 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.35.38.jpeg";
 import {
   Carousel,
   CarouselContent,

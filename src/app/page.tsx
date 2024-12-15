@@ -19,6 +19,7 @@ import cataratasBrasil from "@/assets/imgs/cataratas-brasileiras/b2bf6a03-0e14-4
 import cataratasBrasilAmanecer from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42.jpeg";
 import comprasCDE from "@/assets/imgs/compras-cde/Compras-no-Paraguai.webp";
 import dreamPark from "@/assets/imgs/dreams-park/Dreams-Park-Show-1024x683.png";
+import placeholder from "@/assets/placeholder.jpg";
 
 import {
   Carousel,
@@ -101,42 +102,150 @@ const tours = [
     international: true,
   },
   {
-    link: "./viajens/aldea-guarani",
-    name: "Aldea Guarani",
-    duration: "2:30 horas",
-    price: "44,400",
-    image: imgAldea,
-  },
-
-  {
-    link: "./viajens/cataratas-argentina",
-    name: "Cataratas Argentina",
-    duration: "4 horas",
-    price: "20,400",
-    image: img2,
+    link: "./viajens/dream-park",
+    name: "Rafain cena Show",
+    duration: "2:00 horas",
+    price: "259 reales",
+    image: placeholder,
+    international: true,
   },
   {
-    link: "./viajens/aldea-guarani",
-    name: "Aldea Guarani",
-    duration: "2:30 horas",
-    price: "44,400",
-    image: imgAldea,
+    link: "./viajens/dream-park",
+    name: "Almuerzo en Rafain",
+    duration: "2:00 horas",
+    price: "119 reales",
+    image: placeholder,
+    international: true,
   },
   {
-    link: "./viajens/cataratas-argentina",
-    name: "Cataratas Argentina",
-    duration: "4 horas",
-    price: "20,400",
-    image: img2,
+    link: "./viajens/dream-park",
+    name: "Macuco Safari",
+    duration: "Tarde toda",
+    price: "389 reales",
+    image: placeholder,
+    international: true,
   },
   {
-    link: "./viajens/aldea-guarani",
-    name: "Aldea Guarani",
-    duration: "2:30 horas",
-    price: "44,400",
-    image: imgAldea,
+    link: "./viajens/dream-park",
+    name: "Travesia Iguazu",
+    duration: "2:00 horas",
+    price: "35,000",
+    image: placeholder,
   },
-  // Add other tour objects as needed
+  {
+    link: "./viajens/dream-park",
+    name: "Almuerzo en fortin Cataratas",
+    duration: "Almuerzo",
+    price: "30,600 reales",
+    image: placeholder,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Rafting",
+    duration: "rafting",
+    price: "220 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Macuco Selva",
+    duration: "6:00 horas",
+    price: "193 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Cicloturismo",
+    duration: "3:00 horas",
+    price: "32,500",
+    image: placeholder,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Helisul",
+    duration: "10 minutos",
+    price: "635 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Iguassu Secret Falls - Completa",
+    duration: "Dia todo",
+    price: "300 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Iguassu Secret Falls - Media Jornada",
+    duration: "4:00 horas",
+    price: "200 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Blue Park ",
+    duration: "Dia todo",
+    price: "220 reales adultos",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Movie Cars",
+    duration: "2:00 horas",
+    price: "80 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Paraquedismo Fly Foz",
+    duration: "Dia",
+    price: "1.290 reales Salto SELFIE",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Saltos del mocona",
+    duration: "Dia",
+    price: "73,800",
+    image: placeholder,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Jungle Fly",
+    duration: "Dia",
+    price: "40,000",
+    image: placeholder,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Cruceros Iguazu ",
+    duration: "Tarde - jantar",
+    price: "22,000 adultos",
+    image: placeholder,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Paseo Ecologico",
+    duration: "Tarde",
+    price: "25,000 adultos",
+    image: placeholder,
+  },
+  {
+    link: "./viajens/dream-park",
+    name: "Excursão Guiada Kayak",
+    duration: "Dia",
+    price: "34,500",
+    image: placeholder,
+    international: true,
+  },
 ];
 
 export default function page() {
@@ -189,16 +298,20 @@ export default function page() {
           speed={60}
         >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            saepe Gabriel
+            ¡Ven a viajar con nosotros y descubre los destinos más increíbles!
+            Nuestra agencia te ofrece experiencias únicas y personalizadas para
+            que disfrutes al máximo cada momento.
           </p>
           <span className="mx-4">
-            Eduardo dolorem repellat maxime nostrum reprehenderit accusantium
-            eum Gabriel
+            Explora paisajes inolvidables, vive aventuras emocionantes y
+            relájate en entornos paradisíacos. Nos encargamos de todo para que
+            solo tengas que disfrutar.
           </span>
           <p>
-            Eduardo labore illum aperiam iure, minus rerum laboriosam excepturi
-            dignissimos quas explicabo consequatur. Voluptatum? Gabriel
+            Déjate sorprender por la belleza de cada destino. Con nuestra
+            atención personalizada y experiencia, garantizamos que cada viaje
+            será una experiencia inolvidable. ¡Tu próxima aventura comienza
+            aquí!
           </p>
         </Marquee>
       </div>

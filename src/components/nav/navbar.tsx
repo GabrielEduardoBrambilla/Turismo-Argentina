@@ -16,10 +16,10 @@ export default function Navbar() {
         <Image src={logo} alt="" className="h-20 w-40 object-contain" />
       </Link>
       <div className="hidden gap-12 text-xl font-light text-gray-500 md:flex">
-        <Link className="hover:underline" href={""}>
+        <Link className="hover:underline" href={"/nacional/"}>
           Nacional
         </Link>
-        <Link className="hover:underline" href={""}>
+        <Link className="hover:underline" href={"/internacional/"}>
           Internacional
         </Link>
         <Link className="hover:underline" href={"/sobre-nos"}>

@@ -1,3 +1,4 @@
 export const Util = {
-  WhatsappLink: "Wa.me/+543757653424",
+  WhatsappLink:
+    "https://api.whatsapp.com/send/?phone=%2B543757653424&text&type=phone_number&app_absent=0",
 };

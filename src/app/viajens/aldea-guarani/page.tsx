@@ -1,11 +1,6 @@
 "use client";
 import { FooterCards } from "@/components/footer-cards";
 
-import imgBanner from "@/assets/imgs/aldea-frtin-mborore/img1.jpeg";
-import imgCardMain from "@/assets/imgs/aldea-frtin-mborore/img2.jpeg";
-import imgCardSecondary from "@/assets/imgs/aldea-frtin-mborore/img3.jpeg";
-import imgCardThird from "@/assets/imgs/aldea-frtin-mborore/img4.jpeg";
-import imgCardFourth from "@/assets/imgs/aldea-frtin-mborore/img5.jpeg";
 import {
   Carousel,
   CarouselContent,
@@ -20,6 +15,11 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
+import imgBanner from "@/assets/imgs/aldea-frtin-mborore/img1.jpeg";
+import imgCardMain from "@/assets/imgs/aldea-frtin-mborore/img2.jpeg";
+import imgCardSecondary from "@/assets/imgs/aldea-frtin-mborore/img3.jpeg";
+import imgCardThird from "@/assets/imgs/aldea-frtin-mborore/img4.jpeg";
+import imgCardFourth from "@/assets/imgs/aldea-frtin-mborore/img5.jpeg";
 const imagens = {
   imgBanner: imgBanner,
   imgCardMain: imgCardMain,

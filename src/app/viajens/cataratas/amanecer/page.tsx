@@ -15,27 +15,19 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { ReactNode } from "react";
 
-// const imagens = {
-//   imgBanner: img1,
-//   imgCardMain: img3,
-//   imgCardSecondary: img4,
-//   imgCardThird: img1,
-//   imgCardFourth: img2,
-// };
-
-function getRandomImageUrl(width: number, height: number) {
-  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
-}
+import imgBanner from "@/assets/imgs/Por do sol ou amanecer nas cataratas brasileiras/WhatsApp Image 2024-11-15 at 18.27.27 (1).jpeg";
+import {
+  default as imgCardFourth,
+  default as imgCardMain,
+} from "@/assets/imgs/Por do sol ou amanecer nas cataratas brasileiras/WhatsApp Image 2024-11-15 at 18.27.27 (2).jpeg";
+import imgCardThird from "@/assets/imgs/Por do sol ou amanecer nas cataratas brasileiras/WhatsApp Image 2024-11-15 at 18.27.27 (3).jpeg";
+import imgCardSecondary from "@/assets/imgs/Por do sol ou amanecer nas cataratas brasileiras/WhatsApp Image 2024-11-15 at 18.27.27.jpeg";
 const imagens = {
-  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
-  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-  imgCardSecondary: {
-    src: getRandomImageUrl(300, 200),
-    width: 300,
-    height: 200,
-  },
-  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgBanner: imgBanner,
+  imgCardMain: imgCardMain,
+  imgCardSecondary: imgCardSecondary,
+  imgCardThird: imgCardThird,
+  imgCardFourth: imgCardFourth,
 };
 
 const text = {

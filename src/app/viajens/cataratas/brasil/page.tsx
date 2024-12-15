@@ -1,8 +1,12 @@
 "use client";
 import { Util } from "@/Util/Util";
-import img1 from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.27.jpeg";
 import { FooterCards } from "@/components/footer-cards";
 
+import imgCardFourth from "@/assets/imgs/cataratas-brasileiras/3f80552b-6f53-4a5b-a9f3-1e77307176c7.jpeg";
+import imgCardSecondary from "@/assets/imgs/cataratas-brasileiras/7650865f-69e6-441c-8fd3-7d19d2e617fa.jpeg";
+import imgCardThird from "@/assets/imgs/cataratas-brasileiras/88f059df-a0ac-41c4-9709-a0651c818637.jpeg";
+import imgBanner from "@/assets/imgs/cataratas-brasileiras/8a0cabb1-7a4f-4f1a-ad09-3bc57b8ecceb.jpeg";
+import imgCardMain from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42.jpeg";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -15,20 +19,12 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-
-function getRandomImageUrl(width: number, height: number) {
-  return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
-}
 const imagens = {
-  imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
-  imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-  imgCardSecondary: {
-    src: getRandomImageUrl(300, 200),
-    width: 300,
-    height: 200,
-  },
-  imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-  imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
+  imgBanner: imgBanner,
+  imgCardMain: imgCardMain,
+  imgCardSecondary: imgCardSecondary,
+  imgCardThird: imgCardThird,
+  imgCardFourth: imgCardFourth,
 };
 
 const text = {
@@ -177,7 +173,11 @@ export default function TripPage() {
       <div className="hidden gap-6 md:m-auto md:mb-8 md:w-4/5 md:grid-cols-2 lg:grid">
         <div className="image-col top-0 grid h-max grid-cols-2 gap-6">
           <div className="img-wrapper col-span-2">
-            <Image alt="" className="mb-2 w-full rounded-3xl" src={img1} />
+            <Image
+              alt=""
+              className="mb-2 w-full rounded-3xl"
+              src={imagens.imgBanner}
+            />
           </div>
           {/* <div className="img-wrapper-many flex gap-8"> */}
           <Image
@@ -201,7 +201,7 @@ export default function TripPage() {
             src={imagens.imgCardFourth}
           />
         </div>
-        <div className="Info on desktop content-col sticky top-0 flex h-max min-h-screen flex-col gap-8 text-lg">
+        <div className="Info on desktop content-col sticky top-0 flex h-max flex-col gap-8 text-lg">
           <div className="">
             <h4 className="text-gray-500">{text.firstSmallTitle}</h4>
             <h2 className="mb-2 text-3xl font-bold">{text.MainTitle}</h2>
