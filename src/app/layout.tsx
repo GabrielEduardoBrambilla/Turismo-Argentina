@@ -1,5 +1,6 @@
 import Navbar from "@/components/nav/navbar";
 import { Button } from "@/components/ui/button";
+import { Util } from "@/Util/Util";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,14 +26,18 @@ export default function RootLayout({
         {/* CONTACT HEADER */}
         <header className="hidden bg-black px-12 py-4 text-white md:flex">
           <div className="social-contact flex w-full gap-8 font-robotoMono text-base">
-            <div className="phone flex cursor-pointer items-center justify-center gap-4">
-              <FaPhoneAlt fontSize={20} />
-              <span>Hablar con un ejecutivo </span>
-            </div>
-            <div className="whatsapp flex cursor-pointer items-center justify-center gap-4">
-              <FaWhatsapp fontSize={28} />
-              <span>Envíanos un mesaje</span>
-            </div>
+            <Link target="_blank" href={Util.WhatsappLink}>
+              <div className="phone flex cursor-pointer items-center justify-center gap-4">
+                <FaPhoneAlt fontSize={20} />
+                <span>Hablar con un ejecutivo </span>
+              </div>
+            </Link>
+            <Link target="_blank" href={Util.WhatsappLink}>
+              <div className="whatsapp flex cursor-pointer items-center justify-center gap-4">
+                <FaWhatsapp fontSize={28} />
+                <span>Envíanos un mesaje</span>
+              </div>
+            </Link>
           </div>
           <div className="social-media flex items-center gap-6">
             <Link

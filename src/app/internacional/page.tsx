@@ -7,6 +7,7 @@ import cataratasBrasil from "@/assets/imgs/cataratas-brasileiras/b2bf6a03-0e14-4
 import cataratasBrasilAmanecer from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42.jpeg";
 import comprasCDE from "@/assets/imgs/compras-cde/Compras-no-Paraguai.webp";
 import dreamPark from "@/assets/imgs/dreams-park/Dreams-Park-Show-1024x683.png";
+import placeholder from "@/assets/placeholder.jpg";
 
 import CardList from "@/components/trip-plans";
 
@@ -59,8 +60,102 @@ const tours = [
     image: dreamPark,
     international: true,
   },
-
-  // Add other tour objects as needed
+  {
+    link: "./viajens/rafain-cena-show",
+    name: "Rafain cena Show",
+    duration: "2:00 horas",
+    price: "259 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/almuerzo-rafain",
+    name: "Almuerzo en Rafain",
+    duration: "2:00 horas",
+    price: "119 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/macuco-safari",
+    name: "Macuco Safari",
+    duration: "Tarde toda",
+    price: "389 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/rafting",
+    name: "Rafting",
+    duration: "rafting",
+    price: "220 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/macucuo-selva",
+    name: "Macuco Selva",
+    duration: "6:00 horas",
+    price: "193 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/helisul",
+    name: "Helisul",
+    duration: "10 minutos",
+    price: "635 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/secretfalls-completa",
+    name: "Iguassu Secret Falls - Completa",
+    duration: "Dia todo",
+    price: "300 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/secretfalls-media",
+    name: "Iguassu Secret Falls - Media Jornada",
+    duration: "4:00 horas",
+    price: "200 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/blue-park",
+    name: "Blue Park ",
+    duration: "Dia todo",
+    price: "220 reales adultos",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/movie-car",
+    name: "Movie Cars",
+    duration: "2:00 horas",
+    price: "80 reales",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/fly-foz",
+    name: "Paraquedismo Fly Foz",
+    duration: "Dia",
+    price: "1.290 reales Salto SELFIE",
+    image: placeholder,
+    international: true,
+  },
+  {
+    link: "./viajens/rafting",
+    name: "Excursão Guiada Kayak",
+    duration: "Dia",
+    price: "34,500",
+    image: placeholder,
+    international: true,
+  },
 ];
 export default function TripPage() {
   return (

@@ -12,13 +12,14 @@ import {
   default as cataratasNotche,
   default as img3,
 } from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42 (2).jpeg";
-import { default as img1 } from "@/assets/imgs/jungle-fly/WhatsApp Image 2024-11-15 at 18.40.44.jpeg";
+import { default as img1 } from "@/assets/imgs/ruinas de san ignacio/WhatsApp Image 2024-11-15 at 18.39.26 (2).jpeg";
 import imgWand from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.27.jpeg";
 
 import cataratasBrasil from "@/assets/imgs/cataratas-brasileiras/b2bf6a03-0e14-4e61-a7a9-260000f2d992.jpeg";
 import cataratasBrasilAmanecer from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42.jpeg";
 import comprasCDE from "@/assets/imgs/compras-cde/Compras-no-Paraguai.webp";
 import dreamPark from "@/assets/imgs/dreams-park/Dreams-Park-Show-1024x683.png";
+
 import placeholder from "@/assets/placeholder.jpg";
 
 import {
@@ -251,7 +252,7 @@ const tours = [
 export default function page() {
   return (
     <>
-      <div className="Carosel p- relative w-full bg-blue-500">
+      <div className="Carosel relative w-full bg-blue-500">
         <Carousel
           orientation="horizontal"
           plugins={[
@@ -262,9 +263,9 @@ export default function page() {
           opts={{
             loop: true,
           }}
-          className="z-10"
+          className="z-10 lg:min-h-[65vh]"
         >
-          <CarouselContent className="flex h-[560px] object-cover">
+          <CarouselContent className="flex h-[65vh] object-cover">
             <CarouselItem className="flex justify-items-center">
               <Image
                 alt=""
