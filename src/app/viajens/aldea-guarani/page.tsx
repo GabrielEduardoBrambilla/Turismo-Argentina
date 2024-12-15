@@ -28,21 +28,6 @@ const imagens = {
   imgCardFourth: imgCardFourth,
 };
 
-// function getRandomImageUrl(width: number, height: number) {
-//   return `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
-// }
-// const imagens = {
-//   imgBanner: { src: getRandomImageUrl(800, 300), width: 800, height: 300 },
-//   imgCardMain: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-//   imgCardSecondary: {
-//     src: getRandomImageUrl(300, 200),
-//     width: 300,
-//     height: 200,
-//   },
-//   imgCardThird: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-//   imgCardFourth: { src: getRandomImageUrl(300, 200), width: 300, height: 200 },
-// };
-
 const text = {
   firstSmallTitle: "",
   mainTitle: "Aldea Guarani Fortin Mborore c/Brunch",
