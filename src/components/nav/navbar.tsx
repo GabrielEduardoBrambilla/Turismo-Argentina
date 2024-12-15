@@ -3,13 +3,25 @@
 import { Squash as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import logo from "../../assets/Conquista-tu-Mundo-Logo-NUEVO-1.png";
 
 export default function Navbar() {
   const [toggleSideMenu, setToggleSideMenu] = useState(false);
+  useEffect(() => {
+    if (toggleSideMenu) {
+      document.body.style.overflow = "hidden"; // Prevent scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+
+    // Cleanup the effect when component unmounts or menu state changes
+    return () => {
+      document.body.style.overflow = "auto"; // Ensure scroll is enabled when the component is unmounted
+    };
+  }, [toggleSideMenu]);
   return (
     <nav className="relative flex w-full items-center justify-between overflow-x-clip bg-white px-12 py-3 text-black">
       <Link href={"/"}>
@@ -34,23 +46,14 @@ export default function Navbar() {
           toggleSideMenu ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <Link href="#">
+        <Link className="hover:underline" href={"/nacional/"}>
           <li>Nacional</li>
         </Link>
-        <Link href="#">
-          <li>Teste</li>
+        <Link className="hover:underline" href={"/internacional/"}>
+          <li>Internacional</li>
         </Link>
-        <Link href="#">
-          <li>Teste</li>
-        </Link>
-        <Link href="#">
-          <li>Teste</li>
-        </Link>
-        <Link href="#">
-          <li>Teste</li>
-        </Link>
-        <Link href="#">
-          <li>Teste</li>
+        <Link className="hover:underline" href={"/sobre-nos"}>
+          <li> Quiénes Somos</li>
         </Link>
       </ul>
 
