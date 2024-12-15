@@ -8,18 +8,24 @@ import CardList from "@/components/trip-plans";
 
 import imgAldea from "@/assets/imgs/aldea-frtin-mborore/img4.jpeg";
 import img2 from "@/assets/imgs/cataratas-argentinas/WhatsApp Image 2024-11-15 at 18.31.50.jpeg";
+import cataratasBrasil from "@/assets/imgs/cataratas-brasileiras/b2bf6a03-0e14-4e61-a7a9-260000f2d992.jpeg";
 import {
   default as cataratasNotche,
   default as img3,
 } from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42 (2).jpeg";
-import { default as img1 } from "@/assets/imgs/ruinas de san ignacio/WhatsApp Image 2024-11-15 at 18.39.26 (2).jpeg";
-import imgWand from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.27.jpeg";
-
-import cataratasBrasil from "@/assets/imgs/cataratas-brasileiras/b2bf6a03-0e14-4e61-a7a9-260000f2d992.jpeg";
 import cataratasBrasilAmanecer from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42.jpeg";
+import cicloturismoCard from "@/assets/imgs/cicloturismo/foz-ciclismo-1.jpg";
 import comprasCDE from "@/assets/imgs/compras-cde/Compras-no-Paraguai.webp";
 import dreamPark from "@/assets/imgs/dreams-park/Dreams-Park-Show-1024x683.png";
-
+import fortinCataratas from "@/assets/imgs/fortin-cataratas/caption.jpg";
+import helisulCard from "@/assets/imgs/helisul/card.jpg";
+import macucoSafariCard from "@/assets/imgs/macuco-safari/card.jpg";
+import macucoSelva from "@/assets/imgs/macuco-selva/card.jpg";
+import rafainCena from "@/assets/imgs/rafain-cena-show/img2.jpg";
+import rafainAlmoco from "@/assets/imgs/rafain-cena-show/img3.jpg";
+import raftingCard from "@/assets/imgs/rafting/card.jpg";
+import { default as img1 } from "@/assets/imgs/ruinas de san ignacio/WhatsApp Image 2024-11-15 at 18.39.26 (2).jpeg";
+import imgWand from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.27.jpeg";
 import placeholder from "@/assets/placeholder.jpg";
 
 import {
@@ -107,7 +113,7 @@ const tours = [
     name: "Rafain cena Show",
     duration: "2:00 horas",
     price: "259 reales",
-    image: placeholder,
+    image: rafainCena,
     international: true,
   },
   {
@@ -115,7 +121,7 @@ const tours = [
     name: "Almuerzo en Rafain",
     duration: "2:00 horas",
     price: "119 reales",
-    image: placeholder,
+    image: rafainAlmoco,
     international: true,
   },
   {
@@ -123,7 +129,7 @@ const tours = [
     name: "Macuco Safari",
     duration: "Tarde toda",
     price: "389 reales",
-    image: placeholder,
+    image: macucoSafariCard,
     international: true,
   },
   {
@@ -138,14 +144,14 @@ const tours = [
     name: "Almuerzo en fortin Cataratas",
     duration: "Almuerzo",
     price: "30,600 reales",
-    image: placeholder,
+    image: fortinCataratas,
   },
   {
     link: "./viajens/rafting",
     name: "Rafting",
     duration: "rafting",
     price: "220 reales",
-    image: placeholder,
+    image: raftingCard,
     international: true,
   },
   {
@@ -153,7 +159,7 @@ const tours = [
     name: "Macuco Selva",
     duration: "6:00 horas",
     price: "193 reales",
-    image: placeholder,
+    image: macucoSelva,
     international: true,
   },
   {
@@ -161,14 +167,14 @@ const tours = [
     name: "Cicloturismo",
     duration: "3:00 horas",
     price: "32,500",
-    image: placeholder,
+    image: cicloturismoCard,
   },
   {
     link: "./viajens/helisul",
     name: "Helisul",
     duration: "10 minutos",
     price: "635 reales",
-    image: placeholder,
+    image: helisulCard,
     international: true,
   },
   {
