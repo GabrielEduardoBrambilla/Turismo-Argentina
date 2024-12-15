@@ -9,8 +9,9 @@ import logo from "../assets/Conquista-tu-Mundo-Logo-NUEVO-1.png";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Turismo Argentina",
-  description: "Created by Gabriel Eduardo Brambilla",
+  title: "Conquista Tu Mundo",
+  description:
+    "Excursiones Imperdibles. Nos encanta cumplir tus sueños! Por eso te brindamos un abanico de ideas, y los mejores paquetes turísticos para que conozcas Misiones! Created by Gabriel Eduardo Brambilla",
 };
 
 export default function RootLayout({

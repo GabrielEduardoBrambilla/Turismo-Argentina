@@ -13,10 +13,10 @@ export default function TripOption() {
               {/* Title */}
               <div className="text-center lg:py-4">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  Small business solutions
+                  Conquista Tu Mundo
                 </p>
                 <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-                  Turn online shoppers into lifetime customers
+                  Elegí tu próximo destino turístico
                 </h1>
               </div>
             </div>

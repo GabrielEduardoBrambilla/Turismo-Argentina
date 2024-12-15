@@ -1,3 +1,6 @@
+import { FaCarSide } from "react-icons/fa";
+import { FaUserCheck } from "react-icons/fa6";
+
 export default function Featured() {
   return (
     <>
@@ -5,99 +8,49 @@ export default function Featured() {
         <div className="container mx-auto max-w-[93rem] px-5 py-24">
           <div className="mb-20 text-center">
             <h2 className="mb-4 font-bold text-gray-900 sm:text-3xl lg:text-5xl">
-              Raw Denim Heirloom Man Braid
+              Nuestros tours tienen opciones de
             </h2>
             <p className="text-gray-500s mx-auto text-base leading-relaxed lg:w-3/4 xl:w-2/4">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh
-              mi pug.
+              Estas son algunas de las opciones que puedes elegir para seguir
+              nuestros tours.
             </p>
             <div className="mt-6 flex justify-center">
               <div className="inline-flex h-1 w-16 rounded-full bg-blue-500"></div>
             </div>
           </div>
           <div className="-mx-4 -mb-10 -mt-4 flex flex-wrap items-center justify-center space-y-6 sm:-m-4 md:flex-nowrap md:gap-6 md:space-y-0">
-            <div className="flex flex-col items-center bg-rose-300 p-6 text-center md:w-full">
+            <div className="flex flex-col items-center rounded-lg bg-blue-200 p-6 text-center md:w-full">
               <div className="mb-5 inline-flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-500">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="h-10 w-10"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
+                <FaCarSide fontSize={32} />
               </div>
               <div className="flex-grow">
                 <h2 className="title-font mb-3 text-lg font-medium text-gray-900">
-                  Shooting Stars
+                  Translado
                 </h2>
                 <p className="text-base leading-relaxed">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  Ofrecemos un servicio de traslado cómodo y seguro hasta el
+                  lugar, garantizando su regreso con total practicidad y
+                  tranquilidad durante su viaje.
                 </p>
-                <a className="mt-3 inline-flex items-center text-blue-500">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    className="ml-2 h-4 w-4"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
               </div>
             </div>
-            <div className="flex flex-col items-center bg-amber-100 p-6 text-center md:w-full">
+            <div className="flex flex-col items-center rounded-lg bg-blue-200 p-6 text-center md:w-full">
               <div className="mb-5 inline-flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-500">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="h-10 w-10"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="6" cy="6" r="3"></circle>
-                  <circle cx="6" cy="18" r="3"></circle>
-                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                </svg>
+                <FaUserCheck fontSize={32} />
               </div>
               <div className="flex-grow">
                 <h2 className="title-font mb-3 text-lg font-medium text-gray-900">
-                  The Catalyzer
+                  Guia Bilíngue (Espanhol/Inglês)
                 </h2>
                 <p className="text-base leading-relaxed">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  Disfrute de una experiencia completa con nuestros guías
+                  bilingües, preparados para ofrecer información y apoyo en
+                  español e inglés, asegurando un viaje fluido y enriquecedor
+                  para todos los pasajeros.
                 </p>
-                <a className="mt-3 inline-flex items-center text-blue-500">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    className="ml-2 h-4 w-4"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
               </div>
             </div>
-            <div className="flex flex-col items-center bg-green-200 p-6 text-center md:w-full">
+            <div className="flex flex-col items-center rounded-lg bg-blue-200 p-6 text-center md:w-full">
               <div className="mb-5 inline-flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-500">
                 <svg
                   fill="none"
@@ -114,27 +67,13 @@ export default function Featured() {
               </div>
               <div className="flex-grow">
                 <h2 className="title-font mb-3 text-lg font-medium text-gray-900">
-                  Neptune
+                  Desayuno
                 </h2>
                 <p className="text-base leading-relaxed">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  ¡Empieza el día con energía! Disfruta de un delicioso desayuno
+                  incluido, preparado para todos los gustos y haz que tu
+                  experiencia sea aún más especial.
                 </p>
-                <a className="mt-3 inline-flex items-center text-blue-500">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    className="ml-2 h-4 w-4"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
