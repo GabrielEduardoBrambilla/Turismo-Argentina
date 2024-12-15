@@ -18,8 +18,8 @@ import { ReactNode } from "react";
 const text = {
   firstSmallTitle: "",
   mainTitle: "NOCHE EN LAS CATARATAS",
-  priceHigher: "R$336.55", // R$265 + 27%
-  priceLower: "R$265",
+  priceHigher: "R$336.55 reales", // R$265 + 27%
+  priceLower: "R$265 Reales",
   discountPercent: "27% OFF",
   description:
     "Noche en las Cataratas es una experiencia exclusiva en el Parque Nacional del Iguazú, que ofrece escenas sorprendentes como la luna llena y el cielo estrellado en las Cataratas. Incluye entrada después del cierre del parque y una experiencia gastronómica con queso y pasta en el Restaurante Porto Canoas. El recorrido comienza en el Centro de Visitantes del parque, con embarque único a las 19:30, llevando a los visitantes al Espacio Naipi, donde se encuentran los ascensores que conducen a la pasarela, con una vista privilegiada de la imponente Garganta del Diablo bajo la luz de las estrellas. El Restaurante Porto Canoas abre a partir de las 20 horas con servicio de quesos, pastas y guarniciones variadas, incluidas en el ticket del tour. Porto Canoas ofrece un ambiente único y acogedor, donde los visitantes pueden disfrutar de música en vivo mientras disfrutan de la vida nocturna en las Cataratas. Para regresar del recorrido, los visitantes tienen opciones de transporte a partir de las 21 horas, en el Espacio Porto Canoas, con un intervalo de media hora entre cada embarque, el último a las 22:30 horas.",

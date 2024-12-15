@@ -41,8 +41,8 @@ const imagens = {
 const text = {
   firstSmallTitle: "",
   mainTitle: "Amanecer en Cataratas",
-  priceHigher: "266.7",
-  priceLower: "210",
+  priceHigher: "266.7 reales",
+  priceLower: "210 reales",
   discountPercent: "27% OFF",
   description:
     "El amanecer en las Cataratas comienza en el Centro de Visitantes del Parque Nacional de Iguazú, con embarque en transporte interno. El recorrido comienza en el inicio del Sendero Cataratas y finaliza en el Restaurante Porto Canoas, con desayuno servido de 7:30 a 9:30 horas. También existe la oportunidad de comenzar la aventura en el Espacio Naipi, con acceso directo al ascensor. El tramo hasta Pasarela de las Cataratas, donde se encuentra la Garganta del Diablo, una de las cataratas más sorprendentes, de 80 metros de altura, se recorre mediante ascensores panorámicos. ¡Una de las vistas más privilegiadas de las Cataratas del Iguazú en un momento mágico al amanecer!",

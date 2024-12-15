@@ -34,8 +34,8 @@ const imagens = {
 const text = {
   firstSmallTitle: "Internacional",
   MainTitle: "Cataratas Brasileñas",
-  priceHigher: "$42,000",
-  priceLower: "",
+  priceHigher: "52,500",
+  priceLower: "42,000",
   discountPercent: "",
   description:
     "Servicio grupal con guía Bilingüe (Español/Inglés) y coordinación permanente. Incluye traslado ida y vuelta desde el Hotel. Salidas diarias: 7:30 hs. Regreso 13 hs. No incluye Ingresos.",
