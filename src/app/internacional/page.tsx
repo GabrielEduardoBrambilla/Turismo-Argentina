@@ -7,9 +7,21 @@ import cataratasBrasil from "@/assets/imgs/cataratas-brasileiras/b2bf6a03-0e14-4
 import cataratasBrasilAmanecer from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42.jpeg";
 import comprasCDE from "@/assets/imgs/compras-cde/Compras-no-Paraguai.webp";
 import dreamPark from "@/assets/imgs/dreams-park/Dreams-Park-Show-1024x683.png";
-import placeholder from "@/assets/placeholder.jpg";
 
 import CardList from "@/components/trip-plans";
+
+import blueParkCard from "@/assets/imgs/blue-park/card.png";
+import helisulCard from "@/assets/imgs/helisul/card.jpg";
+import kayakCard from "@/assets/imgs/kayak/card.jpg";
+import macucoSafariCard from "@/assets/imgs/macuco-safari/card.jpg";
+import macucoSelva from "@/assets/imgs/macuco-selva/card.jpg";
+import movieCarCard from "@/assets/imgs/movie-car/card.jpg";
+import paraquedismoCard from "@/assets/imgs/paraquedismo-fly/card.jpg";
+import rafainCena from "@/assets/imgs/rafain-cena-show/img2.jpg";
+import rafainAlmoco from "@/assets/imgs/rafain-cena-show/img3.jpg";
+import raftingCard from "@/assets/imgs/rafting/card.jpg";
+import secretFalls from "@/assets/imgs/secret-falls-media/card.jpg";
+//import placeholder from "@/assets/placeholder.jpg";
 
 const tours = [
   {
@@ -65,7 +77,7 @@ const tours = [
     name: "Rafain cena Show",
     duration: "2:00 horas",
     price: "259 reales",
-    image: placeholder,
+    image: rafainCena,
     international: true,
   },
   {
@@ -73,7 +85,7 @@ const tours = [
     name: "Almuerzo en Rafain",
     duration: "2:00 horas",
     price: "119 reales",
-    image: placeholder,
+    image: rafainAlmoco,
     international: true,
   },
   {
@@ -81,7 +93,7 @@ const tours = [
     name: "Macuco Safari",
     duration: "Tarde toda",
     price: "389 reales",
-    image: placeholder,
+    image: macucoSafariCard,
     international: true,
   },
   {
@@ -89,7 +101,7 @@ const tours = [
     name: "Rafting",
     duration: "rafting",
     price: "220 reales",
-    image: placeholder,
+    image: raftingCard,
     international: true,
   },
   {
@@ -97,7 +109,7 @@ const tours = [
     name: "Macuco Selva",
     duration: "6:00 horas",
     price: "193 reales",
-    image: placeholder,
+    image: macucoSelva,
     international: true,
   },
   {
@@ -105,7 +117,7 @@ const tours = [
     name: "Helisul",
     duration: "10 minutos",
     price: "635 reales",
-    image: placeholder,
+    image: helisulCard,
     international: true,
   },
   {
@@ -113,7 +125,7 @@ const tours = [
     name: "Iguassu Secret Falls - Completa",
     duration: "Dia todo",
     price: "300 reales",
-    image: placeholder,
+    image: secretFalls,
     international: true,
   },
   {
@@ -121,7 +133,7 @@ const tours = [
     name: "Iguassu Secret Falls - Media Jornada",
     duration: "4:00 horas",
     price: "200 reales",
-    image: placeholder,
+    image: secretFalls,
     international: true,
   },
   {
@@ -129,7 +141,7 @@ const tours = [
     name: "Blue Park ",
     duration: "Dia todo",
     price: "220 reales adultos",
-    image: placeholder,
+    image: blueParkCard,
     international: true,
   },
   {
@@ -137,7 +149,7 @@ const tours = [
     name: "Movie Cars",
     duration: "2:00 horas",
     price: "80 reales",
-    image: placeholder,
+    image: movieCarCard,
     international: true,
   },
   {
@@ -145,18 +157,19 @@ const tours = [
     name: "Paraquedismo Fly Foz",
     duration: "Dia",
     price: "1.290 reales Salto SELFIE",
-    image: placeholder,
+    image: paraquedismoCard,
     international: true,
   },
   {
-    link: "./viajens/rafting",
+    link: "./viajens/kayak-guiado",
     name: "Excursão Guiada Kayak",
     duration: "Dia",
     price: "34,500",
-    image: placeholder,
+    image: kayakCard,
     international: true,
   },
 ];
+
 export default function TripPage() {
   return (
     <>

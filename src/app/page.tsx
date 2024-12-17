@@ -7,6 +7,7 @@ import TripOption from "@/components/trip-options";
 import CardList from "@/components/trip-plans";
 
 import imgAldea from "@/assets/imgs/aldea-frtin-mborore/img4.jpeg";
+import blueParkCard from "@/assets/imgs/blue-park/card.png";
 import img2 from "@/assets/imgs/cataratas-argentinas/WhatsApp Image 2024-11-15 at 18.31.50.jpeg";
 import cataratasBrasil from "@/assets/imgs/cataratas-brasileiras/b2bf6a03-0e14-4e61-a7a9-260000f2d992.jpeg";
 import {
@@ -16,17 +17,26 @@ import {
 import cataratasBrasilAmanecer from "@/assets/imgs/cataratas-brasileiras/WhatsApp Image 2024-11-15 at 18.28.42.jpeg";
 import cicloturismoCard from "@/assets/imgs/cicloturismo/foz-ciclismo-1.jpg";
 import comprasCDE from "@/assets/imgs/compras-cde/Compras-no-Paraguai.webp";
+import cruceroCard from "@/assets/imgs/crucero-iguazu/card.jpg";
 import dreamPark from "@/assets/imgs/dreams-park/Dreams-Park-Show-1024x683.png";
 import fortinCataratas from "@/assets/imgs/fortin-cataratas/caption.jpg";
 import helisulCard from "@/assets/imgs/helisul/card.jpg";
+import jungleFlyCard from "@/assets/imgs/jungle-fly/card.jpg";
+import kayakCard from "@/assets/imgs/kayak/card.jpg";
 import macucoSafariCard from "@/assets/imgs/macuco-safari/card.jpg";
 import macucoSelva from "@/assets/imgs/macuco-selva/card.jpg";
+import movieCarCard from "@/assets/imgs/movie-car/card.jpg";
+import paraquedismoCard from "@/assets/imgs/paraquedismo-fly/card.jpg";
+import passeoEcoCard from "@/assets/imgs/passeo-ecologico/card.jpg";
 import rafainCena from "@/assets/imgs/rafain-cena-show/img2.jpg";
 import rafainAlmoco from "@/assets/imgs/rafain-cena-show/img3.jpg";
 import raftingCard from "@/assets/imgs/rafting/card.jpg";
 import { default as img1 } from "@/assets/imgs/ruinas de san ignacio/WhatsApp Image 2024-11-15 at 18.39.26 (2).jpeg";
+import moconaCard from "@/assets/imgs/salto-mocona/card.jpeg";
+import secretFalls from "@/assets/imgs/secret-falls-media/card.jpg";
 import imgWand from "@/assets/imgs/wanda/WhatsApp Image 2024-11-15 at 18.32.27.jpeg";
-import placeholder from "@/assets/placeholder.jpg";
+import travesiaCard from "@/assets/imgs/Zpublicity/56dceac7-0d28-4f81-a2dc-1fe3276591d4.jpeg";
+//import placeholder from "@/assets/placeholder.jpg";
 
 import {
   Carousel,
@@ -137,7 +147,7 @@ const tours = [
     name: "Travesia Iguazu",
     duration: "2:00 horas",
     price: "35,000",
-    image: placeholder,
+    image: travesiaCard,
   },
   {
     link: "./viajens/almuerzo-fortin-cataratas",
@@ -182,7 +192,7 @@ const tours = [
     name: "Iguassu Secret Falls - Completa",
     duration: "Dia todo",
     price: "300 reales",
-    image: placeholder,
+    image: secretFalls,
     international: true,
   },
   {
@@ -190,7 +200,7 @@ const tours = [
     name: "Iguassu Secret Falls - Media Jornada",
     duration: "4:00 horas",
     price: "200 reales",
-    image: placeholder,
+    image: secretFalls,
     international: true,
   },
   {
@@ -198,7 +208,7 @@ const tours = [
     name: "Blue Park ",
     duration: "Dia todo",
     price: "220 reales adultos",
-    image: placeholder,
+    image: blueParkCard,
     international: true,
   },
   {
@@ -206,7 +216,7 @@ const tours = [
     name: "Movie Cars",
     duration: "2:00 horas",
     price: "80 reales",
-    image: placeholder,
+    image: movieCarCard,
     international: true,
   },
   {
@@ -214,7 +224,7 @@ const tours = [
     name: "Paraquedismo Fly Foz",
     duration: "Dia",
     price: "1.290 reales Salto SELFIE",
-    image: placeholder,
+    image: paraquedismoCard,
     international: true,
   },
   {
@@ -222,35 +232,35 @@ const tours = [
     name: "Saltos del mocona",
     duration: "Dia",
     price: "73,800",
-    image: placeholder,
+    image: moconaCard,
   },
   {
     link: "./viajens/jungle-fly",
     name: "Jungle Fly",
     duration: "Dia",
     price: "40,000",
-    image: placeholder,
+    image: jungleFlyCard,
   },
   {
     link: "./viajens/crucero-iguazu",
     name: "Cruceros Iguazu ",
     duration: "Tarde - jantar",
     price: "22,000 adultos",
-    image: placeholder,
+    image: cruceroCard,
   },
   {
     link: "./viajens/paseo-ecologico",
     name: "Paseo Ecologico",
     duration: "Tarde",
     price: "25,000 adultos",
-    image: placeholder,
+    image: passeoEcoCard,
   },
   {
     link: "./viajens/kayak-guiado",
     name: "Excursão Guiada Kayak",
     duration: "Dia",
     price: "34,500",
-    image: placeholder,
+    image: kayakCard,
     international: true,
   },
 ];

@@ -24,7 +24,7 @@ export default function Featured() {
                 <FaCarSide fontSize={32} />
               </div>
               <div className="flex-grow">
-                <h2 className="title-font mb-3 text-lg font-medium text-gray-900">
+                <h2 className="title-font mb-3 h-full text-lg font-medium text-gray-900">
                   Translado
                 </h2>
                 <p className="text-base leading-relaxed">
@@ -67,12 +67,12 @@ export default function Featured() {
               </div>
               <div className="flex-grow">
                 <h2 className="title-font mb-3 text-lg font-medium text-gray-900">
-                  Desayuno
+                  Atención personalizada
                 </h2>
                 <p className="text-base leading-relaxed">
-                  ¡Empieza el día con energía! Disfruta de un delicioso desayuno
-                  incluido, preparado para todos los gustos y haz que tu
-                  experiencia sea aún más especial.
+                  Experimenta un servicio excepcional. Nuestro equipo estará
+                  siempre disponible para garantizar que cada detalle de tu
+                  experiencia sea inolvidable y único.
                 </p>
               </div>
             </div>
